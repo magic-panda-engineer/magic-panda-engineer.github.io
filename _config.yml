@@ -5,17 +5,17 @@
 # Site
 title: 大魔術熊貓工程師
 subtitle: 客戶的需求總是能夠變出來，熬出黑眼圈的胖胖工程師
-description: 
-keywords:
+description: 軟體工程技術分享的部落格
+keywords: "Android,AI,front-end,back-end,IOT"
 author: KoKo Mexcelsa
-language: zh-tw
+language: zh-TW
 timezone: Asia/Taipei
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://magic-panda-engineer.github.io/
 root: /
-permalink: :category/:title
+permalink: :category/:title.html
 permalink_defaults:
 
 # Directory

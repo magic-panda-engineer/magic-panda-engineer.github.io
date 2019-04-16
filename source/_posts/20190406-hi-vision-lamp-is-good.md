@@ -1,8 +1,8 @@
 ---
 title: 三波長燈管真的很亮
-date: 2019-04-16 22:10:30
+date: 2019-04-06 22:10:30
 categories:
-- electrician_plumber
+- Electrician_plumber
 tags: 
 - 水電工
 ---
