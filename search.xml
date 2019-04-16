@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[正確使用GPIO cleanup()方式]]></title>
+    <url>%2FRaspberryPi%2F20190416-correct-way-to-use-GPIO-cleanup.html</url>
+    <content type="text"><![CDATA[黑黑]]></content>
+      <categories>
+        <category>RaspberryPi</category>
+      </categories>
+      <tags>
+        <tag>IOT</tag>
+        <tag>GPIO</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[三波長燈管真的很亮]]></title>
+    <url>%2FElectrician-plumber%2F20190406-hi-vision-lamp-is-good.html</url>
+    <content type="text"><![CDATA[最近因為覺得工作室的燈光實在太暗了 除了工作時會想要睡覺之外，還會被螢幕的光線弄得很刺眼 於是來研究如何讓日光燈管更亮 爬了一下文，所謂的T5、T8、T9等等常見的名詞，指的其實是燈管的直徑，和照明的亮度關係不太大 比較重要的一點是，三波長燈管，遠比舊型的螢光燈管還要來得亮 也就是說，我只要換成三波長燈管，就可以讓工作室更亮囉！ 該怎麼買三波長燈管呢？很簡單，只要先看你的目前燈管的型號，然後再GOOGLE對應的型號就可以啦 以我原本的燈管為例，原本的型號是 FL20D/18 上網查了一下同規格的三波長燈管型號為 FL20/18D-EX 而且包裝上就寫明了這是三波長燈管，就可以直接買回家安裝啦！ 工作室裝上三波長燈管之後，再也不用額外開檯燈了呢！！註：T8和T9燈管，現在大部分都是三波長燈管啦]]></content>
+      <categories>
+        <category>Electrician_plumber</category>
+      </categories>
+      <tags>
+        <tag>水電工</tag>
+      </tags>
+  </entry>
+</search>
