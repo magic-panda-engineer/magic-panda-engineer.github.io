@@ -13,7 +13,7 @@ tags:
 
 原本想說用熟悉的Wordpress，可是想到主機商的費用和搬遷的不便性，就決定使用時下最夯的Static Site Generator啦！
 
-目前Static Site Generator現在有三個最活躍的社群，分別是：**Jekyll、Hugo、Hexo**。
+目前Static Site Generator現在有三個最活躍的技術，分別是：**Jekyll、Hugo、Hexo**。
 
 <!-- more -->
 一開始在決定要用哪個技術時，其實考慮了很久。於是把各家的好壞都寫出來，讓大家參考。
