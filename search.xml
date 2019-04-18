@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo文件永久連結設定的BUG順便談SEO]]></title>
+    <url>%2FHexo%2Fhexo-permalink-bug-and-seo.html</url>
+    <content type="text"><![CDATA[永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。 先談時間格式和SEO一個好的永久連結絕對不能超過三層，不然SEO的排名會比較後面。 像是www.test.com/article/2019/01/01/page.html 這種很多層的網址，就比較難有好的SEO表現。 （當然如果你這篇很多層的文章流量超高，SEO也是會排名比較前面啦！） 一般來說，網址會盡量不要超過三層，而日期這種型式的永久連結，就剛好會讓你網址超過三層。 再者，如果網址裡有日期的話，隨著時間的推移，Google漸漸下調你文章的排名。 雖然有的文章是不受時間影響的經典之作，但是就是Google的機制，也沒有辦法。 所以在設定Hexo永久連結時，建議要先把日期格式給改掉。 內容分類和SEO如果一個網址長得像這樣 www.test.com/cloths/men.html ，一眼就能看出這個頁面的分類屬於服飾類，而且還是男裝。 Google的爬蟲也是一樣的，這種分類清楚的網址，特別容易有較好的SEO表現。 所以在設定Hexo永久連結時，建議使用分類的格式。 而且文章的命名，也要清楚直接，讓人一看就知道這個網址可能是在講什麼主題。 記得字和字之間用dash - 來分開，不要用underscore _，Google有說過dash是比較好選擇。 Hexo文件的BUG和解決之道談完了以上的內容，就是要設定Hexo的永久連結啦！ 按照文件，我要的永久連結格式是 分類/文章名稱，應該設定為 :category/:title 可是這樣子設定之後，卻沒辦法進去文章閱讀 @@ 反而會將整個文章頁面下載下來，打開那個下載檔，裡面是該文章頁面的內容……。 要修正這個問題，只要將 :category/:title 改成 :category/:title.html 就可以啦！！ 如圖所示，加上.html即可 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>SEO</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[為什麼選用Hexo來寫部落格]]></title>
     <url>%2FHexo%2Fwhy-choose-hexo.html</url>
-    <content type="text"><![CDATA[在Evernote寫技術筆記很多年了，最近因為想寫技術部落格，於是開始來尋找部落格的架站平台。 原本想說用熟悉的Wordpress，可是想到主機商的費用和搬遷的不便性，就決定使用時下最夯的Static Site Generator啦！ 目前Static Site Generator現在有三個最活躍的社群，分別是：Jekyll、Hugo、Hexo。 一開始在決定要用哪個技術時，其實考慮了很久。於是把各家的好壞都寫出來，讓大家參考。 Jekyll的好與壞Jekyll是Github自家品牌的Static Site Generator，有著強力後盾做為支援。 可是它是使用Ruby來達成的。 大家都知道Ruby在Windows環境下的支援度不太夠，雖然我是用Mac，但還是很常用Windows的環境來做開發。 再來是Ruby相對比較慢，看了許多部落格主的心得，文章多了之後，在建置網站時真的會花上幾分鐘的時間。 雖然後來Incremental Regeneration，能夠大幅加速，但是考量到常常使用Windows，加上和Ruby不熟，還是放棄它了。 Hugo的好與壞Hugo是用Go語言來達成的Static Site Generator，目前github上面的星星數已經超過Hexo了。 Hugo的特色是生成靜態網站的速度極快！官網號稱它是世界最快的！！ 原本我一度就要使用Hugo來架站了，可是發現Hugo的插件和主題，相對比較少。 而且居然還沒有上到 1.0 版，反觀Hexo都3.8版了。 於是就暫時放棄使用Hugo啦，未來的某一天，Hugo更成熟的話，說不定會改用Hugo吧？ Hexo的好與壞Hexo是用NodeJS去完成的，生成的速度也是很快，不過的確還輸給Hugo一截。 實測Hugo 1秒內就能建置完三篇文章的內容，Hexo要花4秒多。 雖然Hexo慢了一點，但是Hexo已經出來很多年了，周邊插件和社群活躍度都很高，主題選擇性也很廣。 而且我對於NodeJS相關的生態系比較熟悉，到時候要自己改些什麼東西也比較方便。 最後讓我選擇Hexo的臨門一腳，是Next這個主題，其配色是黑和白，相當符合大魔術熊貓工程師的意像 XDDD 附帶一提，Hexo是台灣人做的哦！在中國那邊的社群也是很活躍，因此中文資源也還滿多的。 以上就是三大Static Site Generator的分析啦！ 接下來會再分享一些使用Hexo時踩到的坑。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+    <content type="text"><![CDATA[在Evernote寫技術筆記很多年了，最近因為想寫技術部落格，於是開始來尋找部落格的架站平台。 原本想說用熟悉的Wordpress，可是想到主機商的費用和搬遷的不便性，就決定使用時下最夯的Static Site Generator啦！ 目前Static Site Generator現在有三個最活躍的技術，分別是：Jekyll、Hugo、Hexo。 一開始在決定要用哪個技術時，其實考慮了很久。於是把各家的好壞都寫出來，讓大家參考。 Jekyll的好與壞Jekyll是Github自家品牌的Static Site Generator，有著強力後盾做為支援。 可是它是使用Ruby來達成的。 大家都知道Ruby在Windows環境下的支援度不太夠，雖然我是用Mac，但還是很常用Windows的環境來做開發。 再來是Ruby相對比較慢，看了許多部落格主的心得，文章多了之後，在建置網站時真的會花上幾分鐘的時間。 雖然後來Incremental Regeneration，能夠大幅加速，但是考量到常常使用Windows，加上和Ruby不熟，還是放棄它了。 Hugo的好與壞Hugo是用Go語言來達成的Static Site Generator，目前github上面的星星數已經超過Hexo了。 Hugo的特色是生成靜態網站的速度極快！官網號稱它是世界最快的！！ 原本我一度就要使用Hugo來架站了，可是發現Hugo的插件和主題，相對比較少。 而且居然還沒有上到 1.0 版，反觀Hexo都3.8版了。 於是就暫時放棄使用Hugo啦，未來的某一天，Hugo更成熟的話，說不定會改用Hugo吧？ Hexo的好與壞Hexo是用NodeJS去完成的，生成的速度也是很快，不過的確還輸給Hugo一截。 實測Hugo 1秒內就能建置完三篇文章的內容，Hexo要花4秒多。 雖然Hexo慢了一點，但是Hexo已經出來很多年了，周邊插件和社群活躍度都很高，主題選擇性也很廣。 而且我對於NodeJS相關的生態系比較熟悉，到時候要自己改些什麼東西也比較方便。 最後讓我選擇Hexo的臨門一腳，是Next這個主題，其配色是黑和白，相當符合大魔術熊貓工程師的意像 XDDD 附帶一提，Hexo是台灣人做的哦！在中國那邊的社群也是很活躍，因此中文資源也還滿多的。 以上就是三大Static Site Generator的分析啦！ 接下來會再分享一些使用Hexo時踩到的坑。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
       <categories>
         <category>Hexo</category>
       </categories>

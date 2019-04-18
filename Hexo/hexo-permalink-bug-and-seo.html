@@ -96,18 +96,20 @@
 
 
 
-  <meta name="description" content="在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上GPIO.cleanup()，讓程式結束時可以把GPIO的設定清掉。 最近在開發時，發現明明都已經加上了GPIO.cleanup()，但是設定還是都清不掉……。 GPIO一旦沒有清掉，在跑同一隻程式時，會出RuntimeWarning: This channel is already in use, continuing anyw">
-<meta name="keywords" content="IOT,GPIO,Python">
+  <meta name="description" content="永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。">
+<meta name="keywords" content="SEO">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正確使用GPIO cleanup()方式">
-<meta property="og:url" content="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
+<meta property="og:title" content="Hexo文件永久連結設定的BUG順便談SEO">
+<meta property="og:url" content="https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo.html">
 <meta property="og:site_name" content="大魔術熊貓工程師">
-<meta property="og:description" content="在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上GPIO.cleanup()，讓程式結束時可以把GPIO的設定清掉。 最近在開發時，發現明明都已經加上了GPIO.cleanup()，但是設定還是都清不掉……。 GPIO一旦沒有清掉，在跑同一隻程式時，會出RuntimeWarning: This channel is already in use, continuing anyw">
+<meta property="og:description" content="永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-04-18T03:49:13.180Z">
+<meta property="og:image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/20190418-hexo-doc-bug.png">
+<meta property="og:updated_time" content="2019-04-18T10:27:30.466Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="正確使用GPIO cleanup()方式">
-<meta name="twitter:description" content="在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上GPIO.cleanup()，讓程式結束時可以把GPIO的設定清掉。 最近在開發時，發現明明都已經加上了GPIO.cleanup()，但是設定還是都清不掉……。 GPIO一旦沒有清掉，在跑同一隻程式時，會出RuntimeWarning: This channel is already in use, continuing anyw">
+<meta name="twitter:title" content="Hexo文件永久連結設定的BUG順便談SEO">
+<meta name="twitter:description" content="永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。">
+<meta name="twitter:image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/20190418-hexo-doc-bug.png">
 
 
 
@@ -115,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup">
+  <link rel="canonical" href="https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo">
 
 
 
@@ -125,7 +127,7 @@
   };
 </script>
 
-  <title>正確使用GPIO cleanup()方式 | 大魔術熊貓工程師</title>
+  <title>Hexo文件永久連結設定的BUG順便談SEO | 大魔術熊貓工程師</title>
   
 
 
@@ -395,7 +397,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
+    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KoKo Mexcelsa">
@@ -412,7 +414,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">正確使用GPIO cleanup()方式
+          <h2 class="post-title" itemprop="name headline">Hexo文件永久連結設定的BUG順便談SEO
 
               
             
@@ -438,24 +440,12 @@
                 
               
 
-              <time title="創建時間：2019-04-16 20:38:25" itemprop="dateCreated datePublished" datetime="2019-04-16T20:38:25+08:00">2019-04-16</time>
+              <time title="創建時間：2019-04-18 17:33:53 / 修改時間：18:27:30" itemprop="dateCreated datePublished" datetime="2019-04-18T17:33:53+08:00">2019-04-18</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-04-18 11:49:13" itemprop="dateModified" datetime="2019-04-18T11:49:13+08:00">2019-04-18</time>
               
             
           </span>
@@ -472,7 +462,7 @@
                 <span class="post-meta-item-text">分類於</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/RaspberryPi/" itemprop="url" rel="index"><span itemprop="name">RaspberryPi</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
 
                 
                 
@@ -491,8 +481,8 @@
                 </span>
             
                 <span class="post-meta-item-text">評論數：</span>
-                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="RaspberryPi/correct-way-to-use-GPIO-cleanup.html" itemprop="commentCount"></span>
+                <a href="/Hexo/hexo-permalink-bug-and-seo.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Hexo/hexo-permalink-bug-and-seo.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -527,22 +517,29 @@
       
 
       
-        <p>在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上<code>GPIO.cleanup()</code>，讓程式結束時可以把GPIO的設定清掉。</p>
-<p>最近在開發時，發現明明都已經加上了<code>GPIO.cleanup()</code>，但是設定還是都清不掉……。</p>
-<p>GPIO一旦沒有清掉，在跑同一隻程式時，會出<code>RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.</code> 這樣子的一段警告。</p>
+        <p>永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。</p>
+<p>在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。</p>
+<p>這篇文章最後會分享怎麼解決這個問題。</p>
 <a id="more"></a>
-<p>此時只能重新開機，才能重置GPIO。可是重新開機很麻煩啊，該怎麼辦呢？</p>
-<h2 id="問題點在哪裡？"><a href="#問題點在哪裡？" class="headerlink" title="問題點在哪裡？"></a>問題點在哪裡？</h2><p>首先我們先來看看問題點在哪？</p>
-<p>一般的範例程式，都是這麼寫的：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">    </span><br><span class="line">    GPIO.output(LED_PIN, GPIO.HIGH)</span><br><span class="line">    print(<span class="string">"燈亮啦！"</span>)</span><br><span class="line"></span><br><span class="line">GPIO.cleanup()</span><br></pre></td></tr></table></figure>
-<p>上面的程式碼，明明在最後一行加上了 <code>RuntimeWarning: This channel is already in use, continuing anyway.</code></p>
-<p>可是按下 CTRL + C 中止之後，再跑一次程式，還是會得到 <code>RuntimeWarning: This channel is already in use, continuing anyway.</code> 的警告</p>
-<p><strong>因為 GPIO.cleanup() 在 while 迴圈外，所以根本不會執行到啊！！</strong></p>
-<h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><p>那麼我們該如何解決呢？</p>
-<p>只要善用例外處理的 try except finally 的技巧，就可以讓 <code>GPIO.cleanup()</code> 順利運作啦。</p>
-<p>正確使用<code>GPIO.cleanup()</code>方式的範例如下：</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">while</span> <span class="literal">True</span>:</span><br><span class="line">        </span><br><span class="line">        GPIO.output(LED_PIN, GPIO.HIGH)</span><br><span class="line">        print(<span class="string">"燈亮啦！"</span>)</span><br><span class="line">    </span><br><span class="line"><span class="keyword">except</span> KeyboardInterrupt:  </span><br><span class="line">    <span class="comment"># 當你按下 CTRL+C 中止程式後，所要做的動作</span></span><br><span class="line">    print(<span class="string">"STOP"</span>)</span><br><span class="line">  </span><br><span class="line"><span class="keyword">except</span>:  </span><br><span class="line">    <span class="comment"># 其他例外發生的時候，所要做的動作</span></span><br><span class="line">    print(<span class="string">"Other error or exception occurred!"</span> )</span><br><span class="line">  </span><br><span class="line"><span class="keyword">finally</span>:  </span><br><span class="line">    GPIO.cleanup() <span class="comment"># 把這段程式碼放在 finally 區域，確保程式中止時能夠執行並清掉GPIO的設定！</span></span><br></pre></td></tr></table></figure>
-<p><strong>如果這篇文章有幫助到你，歡迎在下方disqus留言版按愛心推荐哦！有任何問題請留言討論！</strong><br><strong>也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！</strong></p>
+<h2 id="先談時間格式和SEO"><a href="#先談時間格式和SEO" class="headerlink" title="先談時間格式和SEO"></a>先談時間格式和SEO</h2><p>一個好的永久連結絕對不能超過三層，不然SEO的排名會比較後面。</p>
+<p>像是<code>www.test.com/article/2019/01/01/page.html</code> 這種很多層的網址，就比較難有好的SEO表現。</p>
+<p>（當然如果你這篇很多層的文章流量超高，SEO也是會排名比較前面啦！）</p>
+<p>一般來說，網址會盡量不要超過三層，而日期這種型式的永久連結，就剛好會讓你網址超過三層。</p>
+<p>再者，如果網址裡有日期的話，隨著時間的推移，Google漸漸下調你文章的排名。</p>
+<p>雖然有的文章是不受時間影響的經典之作，但是就是Google的機制，也沒有辦法。</p>
+<p>所以在設定Hexo永久連結時，建議要先把日期格式給改掉。</p>
+<h2 id="內容分類和SEO"><a href="#內容分類和SEO" class="headerlink" title="內容分類和SEO"></a>內容分類和SEO</h2><p>如果一個網址長得像這樣 <code>www.test.com/cloths/men.html</code> ，一眼就能看出這個頁面的分類屬於服飾類，而且還是男裝。</p>
+<p>Google的爬蟲也是一樣的，這種分類清楚的網址，特別容易有較好的SEO表現。</p>
+<p>所以在設定Hexo永久連結時，建議使用分類的格式。 </p>
+<p>而且文章的命名，也要清楚直接，讓人一看就知道這個網址可能是在講什麼主題。</p>
+<p>記得字和字之間用dash <code>-</code> 來分開，不要用underscore <code>_</code>，Google有說過dash是比較好選擇。</p>
+<h2 id="Hexo文件的BUG和解決之道"><a href="#Hexo文件的BUG和解決之道" class="headerlink" title="Hexo文件的BUG和解決之道"></a>Hexo文件的BUG和解決之道</h2><p>談完了以上的內容，就是要設定Hexo的永久連結啦！</p>
+<p>按照文件，我要的永久連結格式是 <code>分類/文章名稱</code>，應該設定為 <code>:category/:title</code></p>
+<p>可是這樣子設定之後，卻沒辦法進去文章閱讀 @@</p>
+<p>反而會將整個文章頁面下載下來，打開那個下載檔，裡面是該文章頁面的內容……。</p>
+<p>要修正這個問題，只要將 <code>:category/:title</code> 改成 <code>:category/:title.html</code> 就可以啦！！</p>
+<p><img src="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/20190418-hexo-doc-bug.png" alt="如圖所示，加上`.html`即可"><br><em>如圖所示，加上<code>.html</code>即可</em></p>
+<p><strong>如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！</strong><br><strong>也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！</strong></p>
 
       
     </div>
@@ -570,11 +567,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/IOT/" rel="tag"># IOT</a>
-          
-            <a href="/tags/GPIO/" rel="tag"># GPIO</a>
-          
-            <a href="/tags/Python/" rel="tag"># Python</a>
+            <a href="/tags/SEO/" rel="tag"># SEO</a>
           
         </div>
       
@@ -587,8 +580,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/Electrician-plumber/20190406-hi-vision-lamp-is-good.html" rel="next" title="三波長燈管真的很亮">
-                <i class="fa fa-chevron-left"></i> 三波長燈管真的很亮
+              <a href="/Hexo/why-choose-hexo.html" rel="next" title="為什麼選用Hexo來寫部落格">
+                <i class="fa fa-chevron-left"></i> 為什麼選用Hexo來寫部落格
               </a>
             
           </div>
@@ -596,10 +589,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/Hexo/why-choose-hexo.html" rel="prev" title="為什麼選用Hexo來寫部落格">
-                為什麼選用Hexo來寫部落格 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -817,7 +806,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#問題點在哪裡？"><span class="nav-number">1.</span> <span class="nav-text">問題點在哪裡？</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#解決方法"><span class="nav-number">2.</span> <span class="nav-text">解決方法</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#先談時間格式和SEO"><span class="nav-number">1.</span> <span class="nav-text">先談時間格式和SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#內容分類和SEO"><span class="nav-number">2.</span> <span class="nav-text">內容分類和SEO</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo文件的BUG和解決之道"><span class="nav-number">3.</span> <span class="nav-text">Hexo文件的BUG和解決之道</span></a></li></ol></div>
             
 
           </div>
@@ -1004,9 +993,9 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html";
-    this.page.identifier = "RaspberryPi/correct-way-to-use-GPIO-cleanup.html";
-    this.page.title = '正確使用GPIO cleanup()方式';
+    this.page.url = "https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo.html";
+    this.page.identifier = "Hexo/hexo-permalink-bug-and-seo.html";
+    this.page.title = 'Hexo文件永久連結設定的BUG順便談SEO';
     };
   function loadComments() {
     var d = document, s = d.createElement('script');
