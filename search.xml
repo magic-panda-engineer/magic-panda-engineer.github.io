@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[為什麼選用Hexo來寫部落格]]></title>
+    <url>%2FHexo%2Fwhy-choose-hexo.html</url>
+    <content type="text"><![CDATA[在Evernote寫技術筆記很多年了，最近因為想寫技術部落格，於是開始來尋找部落格的架站平台。 原本想說用熟悉的Wordpress，可是想到主機商的費用和搬遷的不便性，就決定使用時下最夯的Static Site Generator啦！ 目前Static Site Generator現在有三個最活躍的社群，分別是：Jekyll、Hugo、Hexo。 一開始在決定要用哪個技術時，其實考慮了很久。於是把各家的好壞都寫出來，讓大家參考。 Jekyll的好與壞Jekyll是Github自家品牌的Static Site Generator，有著強力後盾做為支援。 可是它是使用Ruby來達成的。 大家都知道Ruby在Windows環境下的支援度不太夠，雖然我是用Mac，但還是很常用Windows的環境來做開發。 再來是Ruby相對比較慢，看了許多部落格主的心得，文章多了之後，在建置網站時真的會花上幾分鐘的時間。 雖然後來Incremental Regeneration，能夠大幅加速，但是考量到常常使用Windows，加上和Ruby不熟，還是放棄它了。 Hugo的好與壞Hugo是用Go語言來達成的Static Site Generator，目前github上面的星星數已經超過Hexo了。 Hugo的特色是生成靜態網站的速度極快！官網號稱它是世界最快的！！ 原本我一度就要使用Hugo來架站了，可是發現Hugo的插件和主題，相對比較少。 而且居然還沒有上到 1.0 版，反觀Hexo都3.8版了。 於是就暫時放棄使用Hugo啦，未來的某一天，Hugo更成熟的話，說不定會改用Hugo吧？ Hexo的好與壞Hexo是用NodeJS去完成的，生成的速度也是很快，不過的確還輸給Hugo一截。 實測Hugo 1秒內就能建置完三篇文章的內容，Hexo要花4秒多。 雖然Hexo慢了一點，但是Hexo已經出來很多年了，周邊插件和社群活躍度都很高，主題選擇性也很廣。 而且我對於NodeJS相關的生態系比較熟悉，到時候要自己改些什麼東西也比較方便。 最後讓我選擇Hexo的臨門一腳，是Next這個主題，其配色是黑和白，相當符合大魔術熊貓工程師的意像 XDDD 附帶一提，Hexo是台灣人做的哦！在中國那邊的社群也是很活躍，因此中文資源也還滿多的。 以上就是三大Static Site Generator的分析啦！ 接下來會再分享一些使用Hexo時踩到的坑。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo Next theme</tag>
+        <tag>Wordpress</tag>
+        <tag>Static Site Generator</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[正確使用GPIO cleanup()方式]]></title>
     <url>%2FRaspberryPi%2Fcorrect-way-to-use-GPIO-cleanup.html</url>
     <content type="text"><![CDATA[在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上GPIO.cleanup()，讓程式結束時可以把GPIO的設定清掉。 最近在開發時，發現明明都已經加上了GPIO.cleanup()，但是設定還是都清不掉……。 GPIO一旦沒有清掉，在跑同一隻程式時，會出RuntimeWarning: This channel is already in use, continuing anyway. Use GPIO.setwarnings(False) to disable warnings. 這樣子的一段警告。 此時只能重新開機，才能重置GPIO。可是重新開機很麻煩啊，該怎麼辦呢？ 問題點在哪裡？首先我們先來看看問題點在哪？ 一般的範例程式，都是這麼寫的： 1234567while True: GPIO.output(LED_PIN, GPIO.HIGH) print("燈亮啦！")GPIO.cleanup() 上面的程式碼，明明在最後一行加上了 RuntimeWarning: This channel is already in use, continuing anyway. 可是按下 CTRL + C 中止之後，再跑一次程式，還是會得到 RuntimeWarning: This channel is already in use, continuing anyway. 的警告 因為 GPIO.cleanup() 在 while 迴圈外，所以根本不會執行到啊！！ 解決方法那麼我們該如何解決呢？ 只要善用例外處理的 try except finally 的技巧，就可以讓 GPIO.cleanup() 順利運作啦。 正確使用GPIO.cleanup()方式的範例如下： 1234567891011121314151617try: while True: GPIO.output(LED_PIN, GPIO.HIGH) print("燈亮啦！") except KeyboardInterrupt: # 當你按下 CTRL+C 中止程式後，所要做的動作 print("STOP") except: # 其他例外發生的時候，所要做的動作 print("Other error or exception occurred!" ) finally: GPIO.cleanup() # 把這段程式碼放在 finally 區域，確保程式中止時能夠執行並清掉GPIO的設定！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版按愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
