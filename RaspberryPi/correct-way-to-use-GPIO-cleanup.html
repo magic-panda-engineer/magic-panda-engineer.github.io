@@ -100,11 +100,11 @@
 <meta name="keywords" content="IOT,GPIO">
 <meta property="og:type" content="article">
 <meta property="og:title" content="正確使用GPIO cleanup()方式">
-<meta property="og:url" content="https://magic-panda-engineer.github.io/RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html">
+<meta property="og:url" content="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
 <meta property="og:site_name" content="大魔術熊貓工程師">
 <meta property="og:description" content="黑黑">
 <meta property="og:locale" content="zh-TW">
-<meta property="og:updated_time" content="2019-04-16T17:13:09.958Z">
+<meta property="og:updated_time" content="2019-04-18T02:29:30.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="正確使用GPIO cleanup()方式">
 <meta name="twitter:description" content="黑黑">
@@ -115,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://magic-panda-engineer.github.io/RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup">
+  <link rel="canonical" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup">
 
 
 
@@ -395,12 +395,12 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html">
+    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把私藏在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -455,7 +455,7 @@
                 
                   <span class="post-meta-item-text">更新於</span>
                 
-                <time title="修改時間：2019-04-17 01:13:09" itemprop="dateModified" datetime="2019-04-17T01:13:09+08:00">2019-04-17</time>
+                <time title="修改時間：2019-04-18 10:29:30" itemprop="dateModified" datetime="2019-04-18T10:29:30+08:00">2019-04-18</time>
               
             
           </span>
@@ -491,8 +491,8 @@
                 </span>
             
                 <span class="post-meta-item-text">評論數：</span>
-                <a href="/RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html" itemprop="commentCount"></span>
+                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="RaspberryPi/correct-way-to-use-GPIO-cleanup.html" itemprop="commentCount"></span>
                 </a>
               </span>
             
@@ -501,6 +501,13 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             閱讀次數： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
           
 
           
@@ -627,10 +634,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="/images/avatar.gif" alt="KoKo Mexcelsa">
+              <img class="site-author-image" itemprop="image" src="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg" alt="KoKo Mexcelsa">
             
               <p class="site-author-name" itemprop="name">KoKo Mexcelsa</p>
-              <div class="site-description motion-element" itemprop="description">努力把私藏在Evernote裡的技術筆記搬到這個Hexo部落格</div>
+              <div class="site-description motion-element" itemprop="description">努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格</div>
           </div>
 
           
@@ -767,6 +774,32 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-user"></i>
+    </span>
+    <span class="site-uv" title="訪客總數">
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+    </span>
+  
+
+  
+    <span class="post-meta-divider">|</span>
+  
+
+  
+    <span class="post-meta-item-icon">
+      <i class="fa fa-eye"></i>
+    </span>
+    <span class="site-pv" title="總瀏覽次數">
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+    </span>
+  
+</div>
+
 
 
 
@@ -881,8 +914,8 @@
 
 <script>
   var disqus_config = function() {
-    this.page.url = "https://magic-panda-engineer.github.io/RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html";
-    this.page.identifier = "RaspberryPi/20190416-correct-way-to-use-GPIO-cleanup.html";
+    this.page.url = "https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html";
+    this.page.identifier = "RaspberryPi/correct-way-to-use-GPIO-cleanup.html";
     this.page.title = '正確使用GPIO cleanup()方式';
     };
   function loadComments() {
