@@ -73,7 +73,7 @@ pagination_dir: page
 # search
 search:
   path: search.xml
-  field: post
+  field: all
   format: html
   limit: 10000
 
