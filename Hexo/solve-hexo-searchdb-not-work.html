@@ -96,17 +96,18 @@
 
 
 
-  <meta name="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-<meta name="keywords" content="Android,AI,front-end,back-end,IOT,前端,後端,資料庫,python,C#,Java,kotlin">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大魔術熊貓工程師">
-<meta property="og:url" content="https://magic-panda-engineer.github.io/index.html">
+  <meta name="description" content="有一天，突然Hexo的searchdb插件不能用了！！ 點擊搜尋後，會顯示載入中的動畫，可是一直都沒有載入 orz Hexo的搜尋文章功能，是建立一支xml檔上面的，叫做search.xml">
+<meta name="keywords" content="hexo searchdb">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解決 Hexo Searchdb 不能使用的問題">
+<meta property="og:url" content="https://magic-panda-engineer.github.io/hexo/solve-hexo-searchdb-not-work.html">
 <meta property="og:site_name" content="大魔術熊貓工程師">
-<meta property="og:description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+<meta property="og:description" content="有一天，突然Hexo的searchdb插件不能用了！！ 點擊搜尋後，會顯示載入中的動畫，可是一直都沒有載入 orz Hexo的搜尋文章功能，是建立一支xml檔上面的，叫做search.xml">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2019-04-19T16:11:53.977Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大魔術熊貓工程師">
-<meta name="twitter:description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+<meta name="twitter:title" content="解決 Hexo Searchdb 不能使用的問題">
+<meta name="twitter:description" content="有一天，突然Hexo的searchdb插件不能用了！！ 點擊搜尋後，會顯示載入中的動畫，可是一直都沒有載入 orz Hexo的搜尋文章功能，是建立一支xml檔上面的，叫做search.xml">
 
 
 
@@ -114,7 +115,7 @@
 
   
   
-  <link rel="canonical" href="https://magic-panda-engineer.github.io/">
+  <link rel="canonical" href="https://magic-panda-engineer.github.io/hexo/solve-hexo-searchdb-not-work">
 
 
 
@@ -124,7 +125,7 @@
   };
 </script>
 
-  <title>大魔術熊貓工程師</title>
+  <title>解決 Hexo Searchdb 不能使用的問題 | 大魔術熊貓工程師</title>
   
 
 
@@ -183,8 +184,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -226,7 +226,7 @@
         
         
           
-          <li class="menu-item menu-item-home menu-item-active">
+          <li class="menu-item menu-item-home">
 
     
     
@@ -378,9 +378,9 @@
           
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -412,10 +412,8 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/hexo/solve-hexo-searchdb-not-work.html" class="post-title-link" itemprop="url">解決 Hexo Searchdb 不能使用的問題</a>
+          <h2 class="post-title" itemprop="name headline">解決 Hexo Searchdb 不能使用的問題
+
               
             
           </h2>
@@ -504,6 +502,13 @@
           
 
           
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             閱讀次數： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
 
           
 
@@ -522,22 +527,26 @@
       
 
       
-        
-          <p>有一天，突然Hexo的searchdb插件不能用了！！</p>
+        <p>有一天，突然Hexo的searchdb插件不能用了！！</p>
 <p>點擊搜尋後，會顯示載入中的動畫，可是一直都沒有載入 orz</p>
 <p>Hexo的搜尋文章功能，是建立一支xml檔上面的，叫做<code>search.xml</code></p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/hexo/solve-hexo-searchdb-not-work.html" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
+<a id="more"></a>
+<p>打開瀏覽器，進入到這個xml檔的路由，看看到底發生什麼事情：<code>localhost:4000/search.xml</code></p>
+<p>這時候畫面居然提示：<code>Input is not proper UTF-8, indicate encoding !</code></p>
+<p>怎麼可能會有非UTF-8的特殊字元呢@@？</p>
+<p>查遍了所有文章，都找不到非UTF-8的字元，真的是非常的神奇。</p>
+<h2 id="解決方法"><a href="#解決方法" class="headerlink" title="解決方法"></a>解決方法</h2><p>這時候突然靈機一動，想說會不會是VS code沒有顯示出非UTF-8的字元。</p>
+<p>於是用Sublime text打開專案，果然就在字裡行間發現了一個東西長成這樣<code>&lt;0x40&gt;</code>。</p>
+<p>也不知道怎麼冒出這個這東西的，總之刪掉了就好了…… orz</p>
+<p>如果你Hexo searchdb的功能也不能用的話，試試看這招吧！</p>
+<p><strong>如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！</strong><br><strong>也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！</strong></p>
+
       
     </div>
+
+    
+      
+
 
     
 
@@ -556,390 +565,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/Android/android-failed-to-find-provider-null-for-user-0.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大魔術熊貓工程師">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Android/android-failed-to-find-provider-null-for-user-0.html" class="post-title-link" itemprop="url">Activeandroid在SDK26之後會遇到的bug</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-04-19 22:26:29 / 修改時間：22:37:32" itemprop="dateCreated datePublished" datetime="2019-04-19T22:26:29+08:00">2019-04-19</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Android/" itemprop="url" rel="index"><span itemprop="name">Android</span></a></span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/hexo-searchdb/" rel="tag"># hexo searchdb</a>
           
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/Android/android-failed-to-find-provider-null-for-user-0.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Android/android-failed-to-find-provider-null-for-user-0.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
+      
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+      
       
       
 
       
-        
-          <p>在Room出來之前，activeandroid是最受歡的ORM之一。</p>
-<p>在業界還是很容易碰到維護案裡，使用activeandroid。</p>
-<p>可是在Android SDK 26之後，activeandroid會出現一個bug。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Android/android-failed-to-find-provider-null-for-user-0.html" rel="contents">
-                閱讀全文 &raquo;
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/Android/android-failed-to-find-provider-null-for-user-0.html" rel="next" title="Activeandroid在SDK26之後會遇到的bug">
+                <i class="fa fa-chevron-left"></i> Activeandroid在SDK26之後會遇到的bug
               </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大魔術熊貓工程師">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Hexo/hexo-permalink-bug-and-seo.html" class="post-title-link" itemprop="url">Hexo文件永久連結設定的BUG順便談SEO</a>
-              
             
-          </h2>
-        
+          </div>
 
-        <div class="post-meta">
-          <span class="post-time">
+          <span class="post-nav-divider"></span>
 
+          <div class="post-nav-prev post-nav-item">
             
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-04-18 17:33:53" itemprop="dateCreated datePublished" datetime="2019-04-18T17:33:53+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-04-19 22:31:09" itemprop="dateModified" datetime="2019-04-19T22:31:09+08:00">2019-04-19</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/Hexo/hexo-permalink-bug-and-seo.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Hexo/hexo-permalink-bug-and-seo.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <p>永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。</p>
-<p>在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。</p>
-<p>這篇文章最後會分享怎麼解決這個問題。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Hexo/hexo-permalink-bug-and-seo.html" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -949,584 +604,22 @@
   </article>
 
 
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/Hexo/why-choose-hexo.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大魔術熊貓工程師">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Hexo/why-choose-hexo.html" class="post-title-link" itemprop="url">為什麼選用Hexo來寫部落格</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-04-18 16:24:09 / 修改時間：20:01:01" itemprop="dateCreated datePublished" datetime="2019-04-18T16:24:09+08:00">2019-04-18</time>
-            
-
-            
-              
-
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/Hexo/why-choose-hexo.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Hexo/why-choose-hexo.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>在Evernote寫技術筆記很多年了，最近因為想寫技術部落格，於是開始來尋找部落格的架站平台。</p>
-<p>原本想說用熟悉的Wordpress，可是想到主機商的費用和搬遷的不便性，就決定使用時下最熱門的Static Site Generator啦！</p>
-<p>目前Static Site Generator現在有三個最活躍的技術，分別是：<strong>Jekyll、Hugo、Hexo</strong>。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Hexo/why-choose-hexo.html" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大魔術熊貓工程師">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html" class="post-title-link" itemprop="url">正確使用GPIO cleanup()方式</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-04-16 20:38:25" itemprop="dateCreated datePublished" datetime="2019-04-16T20:38:25+08:00">2019-04-16</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-04-18 11:49:13" itemprop="dateModified" datetime="2019-04-18T11:49:13+08:00">2019-04-18</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/RaspberryPi/" itemprop="url" rel="index"><span itemprop="name">RaspberryPi</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="RaspberryPi/correct-way-to-use-GPIO-cleanup.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上<code>GPIO.cleanup()</code>，讓程式結束時可以把GPIO的設定清掉。</p>
-<p>最近在開發時，發現明明都已經加上了<code>GPIO.cleanup()</code>，但是設定還是都清不掉……。</p>
-<p>GPIO一旦沒有清掉，在跑同一隻程式時，會出<code>RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.</code> 這樣子的一段警告。</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/Electrician-plumber/20190406-hi-vision-lamp-is-good.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="KoKo Mexcelsa">
-      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="大魔術熊貓工程師">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h2 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/Electrician-plumber/20190406-hi-vision-lamp-is-good.html" class="post-title-link" itemprop="url">三波長燈管真的很亮</a>
-              
-            
-          </h2>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">發表於</span>
-              
-
-              
-                
-              
-
-              <time title="創建時間：2019-04-06 22:10:30" itemprop="dateCreated datePublished" datetime="2019-04-06T22:10:30+08:00">2019-04-06</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新於</span>
-                
-                <time title="修改時間：2019-04-18 10:26:31" itemprop="dateModified" datetime="2019-04-18T10:26:31+08:00">2019-04-18</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分類於</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/Electrician-plumber/" itemprop="url" rel="index"><span itemprop="name">Electrician_plumber</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-              
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-            
-                <span class="post-meta-item-text">評論數：</span>
-                <a href="/Electrician-plumber/20190406-hi-vision-lamp-is-good.html#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="Electrician-plumber/20190406-hi-vision-lamp-is-good.html" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <p>最近因為覺得工作室的燈光實在太暗了</p>
-<p>除了工作時會想要睡覺之外，還會被螢幕的光線弄得很刺眼</p>
-<p>於是來研究如何讓日光燈管更亮</p>
-          <!--noindex-->
-          
-            <div class="post-button text-center">
-              <a class="btn" href="/Electrician-plumber/20190406-hi-vision-lamp-is-good.html" rel="contents">
-                閱讀全文 &raquo;
-              </a>
-            </div>
-          
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1546,8 +639,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目錄
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            本站概要
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -1706,6 +808,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#解決方法"><span class="nav-number">1.</span> <span class="nav-text">解決方法</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -1862,6 +981,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -1880,9 +1003,28 @@
   <script id="dsq-count-scr" src="https://magic-panda-engineer.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://magic-panda-engineer.github.io/hexo/solve-hexo-searchdb-not-work.html";
+    this.page.identifier = "hexo/solve-hexo-searchdb-not-work.html";
+    this.page.title = '解決 Hexo Searchdb 不能使用的問題';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://magic-panda-engineer.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   
