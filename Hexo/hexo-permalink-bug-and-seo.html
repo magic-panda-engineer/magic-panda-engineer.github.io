@@ -105,7 +105,7 @@
 <meta property="og:description" content="永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。">
 <meta property="og:locale" content="zh-TW">
 <meta property="og:image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/20190418-hexo-doc-bug.png">
-<meta property="og:updated_time" content="2019-04-18T10:27:30.466Z">
+<meta property="og:updated_time" content="2019-04-19T14:31:09.985Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo文件永久連結設定的BUG順便談SEO">
 <meta name="twitter:description" content="永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。">
@@ -278,7 +278,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤<span class="badge">8</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤<span class="badge">9</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分類<span class="badge">3</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分類<span class="badge">4</span></a>
 
   </li>
         
@@ -316,7 +316,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">4</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">5</span></a>
 
   </li>
 
@@ -440,12 +440,24 @@
                 
               
 
-              <time title="創建時間：2019-04-18 17:33:53 / 修改時間：18:27:30" itemprop="dateCreated datePublished" datetime="2019-04-18T17:33:53+08:00">2019-04-18</time>
+              <time title="創建時間：2019-04-18 17:33:53" itemprop="dateCreated datePublished" datetime="2019-04-18T17:33:53+08:00">2019-04-18</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-04-19 22:31:09" itemprop="dateModified" datetime="2019-04-19T22:31:09+08:00">2019-04-19</time>
               
             
           </span>
@@ -533,6 +545,7 @@
 <p>所以在設定Hexo永久連結時，建議使用分類的格式。 </p>
 <p>而且文章的命名，也要清楚直接，讓人一看就知道這個網址可能是在講什麼主題。</p>
 <p>記得字和字之間用dash <code>-</code> 來分開，不要用underscore <code>_</code>，Google有說過dash是比較好選擇。</p>
+<p><strong>切記之後就不要再改文章分類了，不然會嚴重影響SEO</strong></p>
 <h2 id="Hexo文件的BUG和解決之道"><a href="#Hexo文件的BUG和解決之道" class="headerlink" title="Hexo文件的BUG和解決之道"></a>Hexo文件的BUG和解決之道</h2><p>談完了以上的內容，就是要設定Hexo的永久連結啦！</p>
 <p>按照文件，我要的永久連結格式是 <code>分類/文章名稱</code>，應該設定為 <code>:category/:title</code></p>
 <p>可是這樣子設定之後，卻沒辦法進去文章閱讀 @@</p>
@@ -589,6 +602,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Android/android-failed-to-find-provider-null-for-user-0.html" rel="prev" title="Activeandroid在SDK26之後會遇到的bug">
+                Activeandroid在SDK26之後會遇到的bug <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -666,7 +683,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">4</span>
+                    <span class="site-state-item-count">5</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -689,7 +706,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">3</span>
+                      
+                    
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">分類</span>
                   </a>
                 </div>
@@ -722,7 +741,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">8</span>
+                      
+                    
+                    <span class="site-state-item-count">9</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -764,6 +785,10 @@
             </div>
             <ul class="links-of-blogroll-list">
               
+              
+                <li>
+                  <a href="/Android/android-failed-to-find-provider-null-for-user-0.html" title="Activeandroid在SDK26之後會遇到的bug" target="_blank">Activeandroid在SDK26之後會遇到的bug</a>
+                </li>
               
                 <li>
                   <a href="/Hexo/hexo-permalink-bug-and-seo.html" title="Hexo文件永久連結設定的BUG順便談SEO" target="_blank">Hexo文件永久連結設定的BUG順便談SEO</a>

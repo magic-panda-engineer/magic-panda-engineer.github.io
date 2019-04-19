@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Activeandroid在SDK26之後會遇到的bug]]></title>
+    <url>%2FAndroid%2Fandroid-failed-to-find-provider-null-for-user-0.html</url>
+    <content type="text"><![CDATA[在Room出來之前，activeandroid是最受歡的ORM之一。 在業界還是很容易碰到維護案裡，使用activeandroid。 可是在Android SDK 26之後，activeandroid會出現一個bug。 會出現下列的錯誤訊息：Error saving model java.lang.SecurityException: Failed to find provider null for user 0; expected to find a valid ContentProvider for this authority 這時候要怎麼解決這個問題呢？ 既然錯誤訊息說沒有contentprovider，我們就加一個上去吧！ 打開專案的AndroidManifest.xml檔，在aaplication tag 之間貼上下列的程式碼，就可以修好這個bug啦！ 123456&lt;provider android:name="com.activeandroid.content.ContentProvider" android:authorities="&lt;你的專案package&gt;" android:enabled="true" android:exported="false"&gt;&lt;/provider&gt; 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>android-plugin</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo文件永久連結設定的BUG順便談SEO]]></title>
     <url>%2FHexo%2Fhexo-permalink-bug-and-seo.html</url>
-    <content type="text"><![CDATA[永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。 先談時間格式和SEO一個好的永久連結絕對不能超過三層，不然SEO的排名會比較後面。 像是www.test.com/article/2019/01/01/page.html 這種很多層的網址，就比較難有好的SEO表現。 （當然如果你這篇很多層的文章流量超高，SEO也是會排名比較前面啦！） 一般來說，網址會盡量不要超過三層，而日期這種型式的永久連結，就剛好會讓你網址超過三層。 再者，如果網址裡有日期的話，隨著時間的推移，Google漸漸下調你文章的排名。 雖然有的文章是不受時間影響的經典之作，但是就是Google的機制，也沒有辦法。 所以在設定Hexo永久連結時，建議要先把日期格式給改掉。 內容分類和SEO如果一個網址長得像這樣 www.test.com/cloths/men.html ，一眼就能看出這個頁面的分類屬於服飾類，而且還是男裝。 Google的爬蟲也是一樣的，這種分類清楚的網址，特別容易有較好的SEO表現。 所以在設定Hexo永久連結時，建議使用分類的格式。 而且文章的命名，也要清楚直接，讓人一看就知道這個網址可能是在講什麼主題。 記得字和字之間用dash - 來分開，不要用underscore _，Google有說過dash是比較好選擇。 Hexo文件的BUG和解決之道談完了以上的內容，就是要設定Hexo的永久連結啦！ 按照文件，我要的永久連結格式是 分類/文章名稱，應該設定為 :category/:title 可是這樣子設定之後，卻沒辦法進去文章閱讀 @@ 反而會將整個文章頁面下載下來，打開那個下載檔，裡面是該文章頁面的內容……。 要修正這個問題，只要將 :category/:title 改成 :category/:title.html 就可以啦！！ 如圖所示，加上.html即可 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+    <content type="text"><![CDATA[永久連結(permalink)在SEO中是非常重要的因素，這關乎你的網站能不能被容易被排名到前面。 在設定Hexo的永久連結時，按照官方文件做，結果卻遇到一個bug。 這篇文章最後會分享怎麼解決這個問題。 先談時間格式和SEO一個好的永久連結絕對不能超過三層，不然SEO的排名會比較後面。 像是www.test.com/article/2019/01/01/page.html 這種很多層的網址，就比較難有好的SEO表現。 （當然如果你這篇很多層的文章流量超高，SEO也是會排名比較前面啦！） 一般來說，網址會盡量不要超過三層，而日期這種型式的永久連結，就剛好會讓你網址超過三層。 再者，如果網址裡有日期的話，隨著時間的推移，Google漸漸下調你文章的排名。 雖然有的文章是不受時間影響的經典之作，但是就是Google的機制，也沒有辦法。 所以在設定Hexo永久連結時，建議要先把日期格式給改掉。 內容分類和SEO如果一個網址長得像這樣 www.test.com/cloths/men.html ，一眼就能看出這個頁面的分類屬於服飾類，而且還是男裝。 Google的爬蟲也是一樣的，這種分類清楚的網址，特別容易有較好的SEO表現。 所以在設定Hexo永久連結時，建議使用分類的格式。 而且文章的命名，也要清楚直接，讓人一看就知道這個網址可能是在講什麼主題。 記得字和字之間用dash - 來分開，不要用underscore _，Google有說過dash是比較好選擇。 切記之後就不要再改文章分類了，不然會嚴重影響SEO Hexo文件的BUG和解決之道談完了以上的內容，就是要設定Hexo的永久連結啦！ 按照文件，我要的永久連結格式是 分類/文章名稱，應該設定為 :category/:title 可是這樣子設定之後，卻沒辦法進去文章閱讀 @@ 反而會將整個文章頁面下載下來，打開那個下載檔，裡面是該文章頁面的內容……。 要修正這個問題，只要將 :category/:title 改成 :category/:title.html 就可以啦！！ 如圖所示，加上.html即可 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
       <categories>
         <category>Hexo</category>
       </categories>
@@ -49,14 +60,14 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
-  </entry>
-  <entry>
     <title><![CDATA[關於我]]></title>
     <url>%2Fabout%2Findex.html</url>
     <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈，其實很看重技術部落格。如果一個工程師沒有寫技術部落格，很容易被質疑技術力不足。（雖然有點病態，但這是我想寫技術部落格的主因XDD） 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
+  </entry>
+  <entry>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[tags]]></title>
