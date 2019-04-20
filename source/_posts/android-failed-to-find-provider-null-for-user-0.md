@@ -29,7 +29,7 @@ tags:
 ``` xml
 <provider
     android:name="com.activeandroid.content.ContentProvider"
-    android:authorities="<你的專案package>"
+    android:authorities="<你的專案package name>"
     android:enabled="true"
     android:exported="false">
 </provider>

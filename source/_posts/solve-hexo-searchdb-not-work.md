@@ -2,9 +2,9 @@
 title: 解決 Hexo Searchdb 不能使用的問題
 date: 2019-04-19 23:56:02
 categories:
-- hexo
+- Hexo
 tags:
-- hexo searchdb
+- Hexo searchdb
 ---
 
 有一天，突然Hexo的searchdb插件不能用了！！
