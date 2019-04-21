@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Hexo Next主題加上最近文章版面]]></title>
+    <url>%2FHexo%2Fhexo-next-recent-article-area.html</url>
+    <content type="text"><![CDATA[當初會選擇Next這個主題，就是看在它黑白分明配色，相當符合熊貓的主題。 用了一陣子後發現，這個主題居然沒有最近文章的版面。 沒有的話，就只好自己動手做啦！ 雖然不會寫swig，不過大概就是和ejs很像的東西吧 具體步驟 打開next/layout/_macro/sidebar.swig 找個喜歡的地方，貼上下列程式碼。（我是貼在if theme.links的前面） 1234567891011121314151617&#123;% if theme.recent_posts %&#125;&lt;div class="links-of-blogroll motion-element &#123;&#123; "links-of-blogroll-" + theme.recent_posts_layout &#125;&#125;"&gt;&lt;div class="links-of-blogroll-title"&gt; &lt;!-- 設定你要的fa fa icon--&gt; &lt;i class="fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;" aria-hidden="true"&gt;&lt;/i&gt; &#123;&#123; theme.recent_posts_title &#125;&#125;&lt;/div&gt;&lt;ul class="links-of-blogroll-list"&gt; &#123;% set posts = site.posts.sort('-date') %&#125; &#123;% for post in posts.slice('0', '5') %&#125; &lt;li&gt; &lt;a href="&#123;&#123; url_for(post.path) &#125;&#125;" title="&#123;&#123; post.title &#125;&#125;" target="_blank"&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; &lt;/li&gt; &#123;% endfor %&#125;&lt;/ul&gt;&lt;/div&gt;&#123;% endif %&#125; 在主題的設定文件hexo/themes/next/_config.yml，加上下列參數。 123recent_posts_title: 近期文章recent_posts_layout: blockrecent_posts: true 使用指令重建hexo，就可以看到近期文章的區塊啦。hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Hexo</category>
+      </categories>
+      <tags>
+        <tag>Hexo Next theme</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo 404和字母大小寫的問題]]></title>
     <url>%2FHexo%2Fhexo-404-and-letter-case.html</url>
     <content type="text"><![CDATA[最近發現有些頁面會出現404，都是發生在點入特定的標簽或是分類時發生了。 研究了一下，居然是因為字母大小寫的問題產生的 orz。像是分類如果寫CSS，和css，就會出現錯誤。 那麼我們要怎麼解決這個問呢？ 解決方法在.deploy_git中，原始的設置是對大小寫不敏感的，可實際上大小寫不一樣就讓你404。 所以我們要修改.deploy_git中的設置。 從Windows檔案總管或Mac Finder中打開專案中.deploy_git的資料夾。 進到.deploy_git資料夾中.git，找到文件config。(用VS code可能會找不到.git資料夾) 打開文件config，將 ignorecase=true 改為 ignorecase=false，存檔。 把.deploy_git資料夾中除了.git之外的文件通通刪掉。 再用指令hexo clean &amp;&amp; hexo g -d，清除並佈署上去，就會發現404修好啦！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
