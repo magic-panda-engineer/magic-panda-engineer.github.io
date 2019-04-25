@@ -148,7 +148,7 @@ template {
   display: none;
 }
 ::selection {
-  background: #262a30;
+  background: #00803e;
   color: #fff;
 }
 body {
@@ -281,8 +281,8 @@ span.exturl {
 }
 a:hover,
 span.exturl:hover {
-  color: #222;
-  border-bottom-color: #222;
+  color: #00803e;
+  border-bottom-color: #00803e;
 }
 video {
   max-width: 100%;
@@ -959,7 +959,7 @@ pre .javascript .function {
   line-height: 2;
 }
 .btn:hover {
-  border-color: #222;
+  border-color: #00803e;
   color: #fff;
   background: #222;
 }
@@ -1570,7 +1570,7 @@ pre .javascript .function {
   border-bottom: none;
 }
 .post-nav-item a:hover {
-  color: #222;
+  color: #00803e;
   border-bottom: none;
 }
 .post-nav-item a:active {
@@ -1768,7 +1768,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4bffff;
+  background: #ebff57;
 }
 .feed-link,
 .chat {
@@ -2408,7 +2408,7 @@ ul.breadcrumb li+li:last-child {
   margin: 10px;
 }
 .tag-cloud a:hover {
-  color: #222 !important;
+  color: #00803e !important;
 }
 .header {
   position: relative;
