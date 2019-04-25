@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[利用Wakatime來掌握寫程式的時間]]></title>
+    <url>%2Ftools%2Fwakatime-for-time-management.html</url>
+    <content type="text"><![CDATA[平常都不知道花了多少時間在寫程式嗎？ 一個專案投入多少時間成本進去，拿到的收入是否對價呢？ 在這裡推荐一個好工具來管理寫code寫專案的時間。 WakatimeWakatime是一個開源專案的時間管理插件。 針對不同的IDE或是編輯器，他都有提供插件。 像是我常用的Android Studio，VS code，Visual Studio 等等工具，都能安裝這個插件。 大家可以去這裡看看Wakatime支援哪些IDE。 並且點擊IDE icon進去之後，可以看到安裝的詳細流程，因此本文就不介紹Wakatime的安裝啦！ 使用github帳號登入，並且在你用的IDE中安裝好並輸入要求的API key（安裝流程裡都有寫哦！），就能開始使用囉！ Wakatime有哪些功能？Wakatime最重要的，就是寫程式時間的統計啦！ 只要登入Wakatime官方網站後，首頁就是你寫程式的Dashboard。 這個Dashboard是以一周為單位，當然可以從settings再進去做調整。 最基本的功能就是你這周每天寫程式寫了多久。 還有圓餅圖，分析你在各個程式語言裡花了多久的比例。 這個功能很酷炫，尤其是寫很多語言的工程師，圓餅圖會變得很花 XDD 還有你使用什麼IDE，以及用了多久。 像我最常用的就是Android Studio，VS code，Visual Studio，從圖片中看起來分配得還滿平均的XDD。 最重要的功能就是在這裡啦！！ 可以看你每個專案花了多少時間，在專案管理上特別的好用。 當然每個專案點擊進去，還會有更詳細的分析。 有了這個輔助功能之後，更能掌握自己寫程式的效率，在估算人天或是人月上就更方便了呢！ 不過工程師不是一直都在coding，也會很常在看技術文件、論文或是做設計，因此不能單單用Wakatime來評估績效哦！ Wakatime費用Wakatime 如果免費使用的話，只會顯示兩周內的紀錄。 不過那些紀錄都不會被刪掉的，一旦你付費，就能看到自己從古至今的紀錄啦！ 費用的連結在這裡。 還是要再次強調工程師不是一直都在coding，因此不能單單用Wakatime來評估績效哦！ 如果是企業買來看員工的效率，要考慮一下相關的績效指標哦！ 不想付費怎麼辦？別擔心，Wakatime每周都會寄周報到你的電子信箱。 周報裡面都會有這周的語言使用時間、每個專案花的時間和IDE的時間。 因此透過email的內容做紀錄，也是可以啦！ Wakatime的安全性Wakatime是開源的，如果怕怕的話，可以去Wakatime github看原始碼哦！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>tools</category>
+      </categories>
+      <tags>
+        <tag>IDE tools</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Hexo Next主題加上最近文章版面]]></title>
     <url>%2FHexo%2Fhexo-next-recent-article-area.html</url>
     <content type="text"><![CDATA[當初會選擇Next這個主題，就是看在它黑白分明配色，相當符合熊貓的主題。 用了一陣子後發現，這個主題居然沒有最近文章的版面。 沒有的話，就只好自己動手做啦！ 雖然不會寫swig，不過大概就是和ejs很像的東西吧 具體步驟 打開next/layout/_macro/sidebar.swig 找個喜歡的地方，貼上下列程式碼。（我是貼在if theme.links的前面） 1234567891011121314151617&#123;% if theme.recent_posts %&#125;&lt;div class="links-of-blogroll motion-element &#123;&#123; "links-of-blogroll-" + theme.recent_posts_layout &#125;&#125;"&gt;&lt;div class="links-of-blogroll-title"&gt; &lt;!-- 設定你要的fa fa icon--&gt; &lt;i class="fa fa-history fa-&#123;&#123; theme.recent_posts_icon | lower &#125;&#125;" aria-hidden="true"&gt;&lt;/i&gt; &#123;&#123; theme.recent_posts_title &#125;&#125;&lt;/div&gt;&lt;ul class="links-of-blogroll-list"&gt; &#123;% set posts = site.posts.sort('-date') %&#125; &#123;% for post in posts.slice('0', '5') %&#125; &lt;li&gt; &lt;a href="&#123;&#123; url_for(post.path) &#125;&#125;" title="&#123;&#123; post.title &#125;&#125;" target="_blank"&gt;&#123;&#123; post.title &#125;&#125;&lt;/a&gt; &lt;/li&gt; &#123;% endfor %&#125;&lt;/ul&gt;&lt;/div&gt;&#123;% endif %&#125; 在主題的設定文件hexo/themes/next/_config.yml，加上下列參數。 123recent_posts_title: 近期文章recent_posts_layout: blockrecent_posts: true 使用指令重建hexo，就可以看到近期文章的區塊啦。hexo clean &amp;&amp; hexo g &amp;&amp; hexo s 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
@@ -109,13 +120,13 @@
     <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈，其實很看重技術部落格。如果一個工程師沒有寫技術部落格，很容易被質疑技術力不足。（雖然有點病態，但這是我想寫技術部落格的主因XDD） 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>

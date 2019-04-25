@@ -1768,7 +1768,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff1fc3;
+  background: #4bffff;
 }
 .feed-link,
 .chat {
@@ -1834,7 +1834,7 @@ pre .javascript .function {
   color: #555;
 }
 .sidebar-nav li:hover {
-  color: #fc6423;
+  color: #00803e;
 }
 .page-post-detail .sidebar-nav-toc {
   padding: 0 5px;
@@ -1843,11 +1843,11 @@ pre .javascript .function {
   margin-left: 10px;
 }
 .sidebar-nav .sidebar-nav-active {
-  color: #fc6423;
-  border-bottom-color: #fc6423;
+  color: #00803e;
+  border-bottom-color: #00803e;
 }
 .sidebar-nav .sidebar-nav-active:hover {
-  color: #fc6423;
+  color: #00803e;
 }
 .sidebar-panel {
   display: none;
@@ -1936,14 +1936,14 @@ pre .javascript .function {
   display: block;
 }
 .post-toc .nav .active > a {
-  color: #fc6423;
-  border-bottom-color: #fc6423;
+  color: #00803e;
+  border-bottom-color: #00803e;
 }
 .post-toc .nav .active-current > a {
-  color: #fc6423;
+  color: #00803e;
 }
 .post-toc .nav .active-current > a:hover {
-  color: #fc6423;
+  color: #00803e;
 }
 .footer {
   font-size: 14px;
@@ -2377,7 +2377,7 @@ ul.popular-posts .popular-posts-item .popular-posts-title {
   }
 }
 .page-post-detail .sidebar-toggle-line {
-  background: #fc6423;
+  background: #00803e;
 }
 .page-post-detail .comments {
   overflow: hidden;
@@ -2653,16 +2653,16 @@ ul.breadcrumb li+li:last-child {
 .sub-menu .menu-item a:hover,
 .sub-menu .menu-item span.exturl:hover {
   background: initial !important;
-  color: #fc6423;
+  color: #00803e;
 }
 .sub-menu .menu-item-active a {
   background: #fff !important;
-  color: #fc6423;
-  border-bottom-color: #fc6423;
+  color: #00803e;
+  border-bottom-color: #00803e;
 }
 .sub-menu .menu-item-active a:hover {
   background: #fff !important;
-  border-bottom-color: #fc6423;
+  border-bottom-color: #00803e;
 }
 .use-motion .sidebar .motion-element {
   opacity: 1;
