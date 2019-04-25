@@ -88,3 +88,8 @@ deploy:
   type: git
   repo: https://github.com/magic-panda-engineer/magic-panda-engineer.github.io.git
   branch: master
+
+# site map
+sitemap:
+    path: sitemap.xml
+
