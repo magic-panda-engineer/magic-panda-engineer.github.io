@@ -14,7 +14,7 @@ tags:
 在這裡推荐一個好工具來管理寫code寫專案的時間。
 
 <!-- more -->
-## [Wakatime](https://wakatime.com/)
+## [Wakatime](https://wakatime.com/?utm_source=magic-panda-engineer)
 
 Wakatime是一個[開源專案](https://github.com/wakatime)的時間管理插件。
 
@@ -22,9 +22,9 @@ Wakatime是一個[開源專案](https://github.com/wakatime)的時間管理插�
 
 像是我常用的Android Studio，VS code，Visual Studio 等等工具，都能安裝這個插件。
 
-大家可以去[這裡看看](https://wakatime.com/plugins)Wakatime支援哪些IDE。
+大家可以去[這裡看看](https://wakatime.com/plugins?utm_source=magic-panda-engineer)Wakatime支援哪些IDE。
 
-並且點擊IDE icon進去之後，可以看到[安裝的詳細流程](https://wakatime.com/plugins)，因此本文就不介紹Wakatime的安裝啦！
+並且點擊IDE icon進去之後，可以看到[安裝的詳細流程](https://wakatime.com/plugins?utm_source=magic-panda-engineer)，因此本文就不介紹Wakatime的安裝啦！
 
 使用github帳號登入，並且在你用的IDE中安裝好並輸入要求的API key（安裝流程裡都有寫哦！），就能開始使用囉！
 
@@ -33,7 +33,7 @@ Wakatime是一個[開源專案](https://github.com/wakatime)的時間管理插�
 
 Wakatime最重要的，就是寫程式時間的統計啦！
 
-只要登入[Wakatime官方網站後](https://wakatime.com/)，首頁就是你寫程式的Dashboard。
+只要登入[Wakatime官方網站後](https://wakatime.com/?utm_source=magic-panda-engineer)，首頁就是你寫程式的Dashboard。
 
 這個Dashboard是以一周為單位，當然可以從settings再進去做調整。
 
@@ -80,7 +80,7 @@ Wakatime 如果免費使用的話，只會顯示兩周內的紀錄。
 
 不過那些紀錄都不會被刪掉的，一旦你付費，就能看到自己從古至今的紀錄啦！
 
-[費用的連結在這裡](https://wakatime.com/pricing)。
+[費用的連結在這裡](https://wakatime.com/pricing?utm_source=magic-panda-engineer)。
 
 **還是要再次強調工程師不是一直都在coding，因此不能單單用Wakatime來評估績效哦！**
 
