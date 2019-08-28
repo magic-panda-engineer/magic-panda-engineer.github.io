@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用Python比較兩個list內容的差異]]></title>
+    <url>%2FPython%2Fpython-compare-two-lists.html</url>
+    <content type="text"><![CDATA[在整理資料的過程中，常常碰到兩個資料夾之中，裝有類似、但不完全一樣的檔案數量 例如說，同樣的檔案名稱，但是不同的副檔名（常見於深度學習的影像檔和標記檔） 這時候就會先把各類別的檔案名稱，存到各自的list之中 如果要比較兩個list之間的差異，就可以利用set().symmetric_difference()來完成： 12345678def Diff(li1, li2): return (list(set(li1).symmetric_difference(set(li2))))list1 = [1,2,3,4,5]list2 = [5,6,7,8,9]print(Diff(list1, list2)) 因為兩個list，只有5是一樣的，這時候會就印出：1[1, 2, 3, 4, 6, 7, 8, 9] 如果改把list2改成：1list2 = [1,2,3,4] 那麼就會印出：[5]，因為只有5，是不一樣的。 善用set().symmetric_difference()，就可以很容易的找到兩個資料夾不同的地方啦！！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Python</category>
+      </categories>
+      <tags>
+        <tag>Python</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[利用Wakatime來掌握寫程式的時間]]></title>
     <url>%2Ftools%2Fwakatime-for-time-management.html</url>
     <content type="text"><![CDATA[平常都不知道花了多少時間在寫程式嗎？ 一個專案投入多少時間成本進去，拿到的收入是否對價呢？ 在這裡推荐一個好工具來管理寫code寫專案的時間。 WakatimeWakatime是一個開源專案的時間管理插件。 針對不同的IDE或是編輯器，他都有提供插件。 像是我常用的Android Studio，VS code，Visual Studio 等等工具，都能安裝這個插件。 大家可以去這裡看看Wakatime支援哪些IDE。 並且點擊IDE icon進去之後，可以看到安裝的詳細流程，因此本文就不介紹Wakatime的安裝啦！ 使用github帳號登入，並且在你用的IDE中安裝好並輸入要求的API key（安裝流程裡都有寫哦！），就能開始使用囉！ Wakatime有哪些功能？Wakatime最重要的，就是寫程式時間的統計啦！ 只要登入Wakatime官方網站後，首頁就是你寫程式的Dashboard。 這個Dashboard是以一周為單位，當然可以從settings再進去做調整。 最基本的功能就是你這周每天寫程式寫了多久。 還有圓餅圖，分析你在各個程式語言裡花了多久的比例。 這個功能很酷炫，尤其是寫很多語言的工程師，圓餅圖會變得很花 XDD 還有你使用什麼IDE，以及用了多久。 像我最常用的就是Android Studio，VS code，Visual Studio，從圖片中看起來分配得還滿平均的XDD。 最重要的功能就是在這裡啦！！ 可以看你每個專案花了多少時間，在專案管理上特別的好用。 當然每個專案點擊進去，還會有更詳細的分析。 有了這個輔助功能之後，更能掌握自己寫程式的效率，在估算人天或是人月上就更方便了呢！ 不過工程師不是一直都在coding，也會很常在看技術文件、論文或是做設計，因此不能單單用Wakatime來評估績效哦！ Wakatime費用Wakatime 如果免費使用的話，只會顯示兩周內的紀錄。 不過那些紀錄都不會被刪掉的，一旦你付費，就能看到自己從古至今的紀錄啦！ 費用的連結在這裡。 還是要再次強調工程師不是一直都在coding，因此不能單單用Wakatime來評估績效哦！ 如果是企業買來看員工的效率，要考慮一下相關的績效指標哦！ 不想付費怎麼辦？別擔心，Wakatime每周都會寄周報到你的電子信箱。 周報裡面都會有這周的語言使用時間、每個專案花的時間和IDE的時間。 因此透過email的內容做紀錄，也是可以啦！ Wakatime的安全性Wakatime是開源的，如果怕怕的話，可以去Wakatime github看原始碼哦！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
