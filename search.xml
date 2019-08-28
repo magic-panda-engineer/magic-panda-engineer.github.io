@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[YOLO V1 論文導讀投影片]]></title>
+    <url>%2FAI%2Fyolo-v1-slides.html</url>
+    <content type="text"><![CDATA[參加了一段時間的 AI Tech 論文導讀社群，終於輪到我報告論文啦！！ 因為工作上需要用到大量的物件辨識的技術，所以就選了承先起後、繼往開來的YOLO V1來做報告。 我是在2019/03/17、於夢森林分享論文的，不過最近才有空上傳投影片 XDDD 投影片上傳在slideshare，就直接嵌進來。 YOLO V1 論文導讀 from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>Object Detection</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[用Python比較兩個list內容的差異]]></title>
     <url>%2FPython%2Fpython-compare-two-lists.html</url>
     <content type="text"><![CDATA[在整理資料的過程中，常常碰到兩個資料夾之中，裝有類似、但不完全一樣的檔案數量 例如說，同樣的檔案名稱，但是不同的副檔名（常見於深度學習的影像檔和標記檔） 這時候就會先把各類別的檔案名稱，存到各自的list之中 如果要比較兩個list之間的差異，就可以利用set().symmetric_difference()來完成： 12345678def Diff(li1, li2): return (list(set(li1).symmetric_difference(set(li2))))list1 = [1,2,3,4,5]list2 = [5,6,7,8,9]print(Diff(list1, list2)) 因為兩個list，只有5是一樣的，這時候會就印出：1[1, 2, 3, 4, 6, 7, 8, 9] 如果改把list2改成：1list2 = [1,2,3,4] 那麼就會印出：[5]，因為只有5，是不一樣的。 善用set().symmetric_difference()，就可以很容易的找到兩個資料夾不同的地方啦！！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>

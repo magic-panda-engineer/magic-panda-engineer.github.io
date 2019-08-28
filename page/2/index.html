@@ -278,7 +278,7 @@
       
     
 
-    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤<span class="badge">13</span></a>
+    <a href="/tags/" rel="section"><i class="menu-item-icon fa fa-fw fa-tags"></i> <br>標籤<span class="badge">14</span></a>
 
   </li>
         
@@ -297,7 +297,7 @@
       
     
 
-    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分類<span class="badge">7</span></a>
+    <a href="/categories/" rel="section"><i class="menu-item-icon fa fa-fw fa-th"></i> <br>分類<span class="badge">8</span></a>
 
   </li>
         
@@ -316,7 +316,7 @@
       
     
 
-    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">11</span></a>
+    <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>歸檔<span class="badge">12</span></a>
 
   </li>
 
@@ -381,6 +381,200 @@
           <div id="content" class="content">
             
   <section id="posts" class="posts-expand">
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/RaspberryPi/correct-way-to-use-GPIO-cleanup.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="KoKo Mexcelsa">
+      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大魔術熊貓工程師">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html" class="post-title-link" itemprop="url">正確使用GPIO cleanup()方式</a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+
+              
+                
+              
+
+              <time title="創建時間：2019-04-16 20:38:25" itemprop="dateCreated datePublished" datetime="2019-04-16T20:38:25+08:00">2019-04-16</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2019-04-18 11:49:13" itemprop="dateModified" datetime="2019-04-18T11:49:13+08:00">2019-04-18</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/RaspberryPi/" itemprop="url" rel="index"><span itemprop="name">RaspberryPi</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="RaspberryPi/correct-way-to-use-GPIO-cleanup.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <p>在以Python寫樹莓派GPIO的時候，範例程式常常會在最後一行加上<code>GPIO.cleanup()</code>，讓程式結束時可以把GPIO的設定清掉。</p>
+<p>最近在開發時，發現明明都已經加上了<code>GPIO.cleanup()</code>，但是設定還是都清不掉……。</p>
+<p>GPIO一旦沒有清掉，在跑同一隻程式時，會出<code>RuntimeWarning: This channel is already in use, continuing anyway.  Use GPIO.setwarnings(False) to disable warnings.</code> 這樣子的一段警告。</p>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/RaspberryPi/correct-way-to-use-GPIO-cleanup.html" rel="contents">
+                閱讀全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
     
       
 
@@ -624,7 +818,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">11</span>
+                    <span class="site-state-item-count">12</span>
                     <span class="site-state-item-name">文章</span>
                   </a>
                 </div>
@@ -655,7 +849,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">7</span>
+                      
+                    
+                    <span class="site-state-item-count">8</span>
                     <span class="site-state-item-name">分類</span>
                   </a>
                 </div>
@@ -698,7 +894,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">13</span>
+                      
+                    
+                    <span class="site-state-item-count">14</span>
                     <span class="site-state-item-name">標籤</span>
                   </a>
                 </div>
@@ -742,6 +940,10 @@
               
               
                 <li>
+                  <a href="/AI/yolo-v1-slides.html" title="YOLO V1 論文導讀投影片" target="_blank">YOLO V1 論文導讀投影片</a>
+                </li>
+              
+                <li>
                   <a href="/Python/python-compare-two-lists.html" title="用Python比較兩個list內容的差異" target="_blank">用Python比較兩個list內容的差異</a>
                 </li>
               
@@ -755,10 +957,6 @@
               
                 <li>
                   <a href="/Hexo/hexo-404-and-letter-case.html" title="Hexo 404和字母大小寫的問題" target="_blank">Hexo 404和字母大小寫的問題</a>
-                </li>
-              
-                <li>
-                  <a href="/CSS/css-flex-hexschool-game.html" title="CSS Flex筆記--從六角學院的遊戲出發" target="_blank">CSS Flex筆記--從六角學院的遊戲出發</a>
                 </li>
               
             </ul>
