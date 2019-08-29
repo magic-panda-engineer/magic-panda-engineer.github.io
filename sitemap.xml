@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/about/index.html</loc>
+    
+    <lastmod>2019-08-29T07:24:22.154Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/work/negative-examples-for-remote-work.html</loc>
+    
+    <lastmod>2019-08-29T07:21:02.069Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/AI/yolo-v1-slides.html</loc>
     
-    <lastmod>2019-08-28T10:21:14.363Z</lastmod>
+    <lastmod>2019-08-28T10:25:00.283Z</lastmod>
     
   </url>
   
@@ -68,13 +82,6 @@
     <loc>https://magic-panda-engineer.github.io/Hexo/hexo-permalink-bug-and-seo.html</loc>
     
     <lastmod>2019-04-19T14:31:09.985Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/about/index.html</loc>
-    
-    <lastmod>2019-04-18T09:28:18.812Z</lastmod>
     
   </url>
   
