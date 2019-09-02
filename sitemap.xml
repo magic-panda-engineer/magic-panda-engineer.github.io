@@ -2,9 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/tools/wakatime-for-time-management</loc>
+    
+    <lastmod>2019-09-02T07:56:23.608Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/RaspberryPi/raspberry-pi-4-desktop-kit-unboxing</loc>
     
-    <lastmod>2019-09-02T07:26:41.458Z</lastmod>
+    <lastmod>2019-09-02T07:55:59.733Z</lastmod>
     
   </url>
   
@@ -40,13 +47,6 @@
     <loc>https://magic-panda-engineer.github.io/Hexo/why-choose-hexo</loc>
     
     <lastmod>2019-04-25T15:16:04.359Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/tools/wakatime-for-time-management</loc>
-    
-    <lastmod>2019-04-25T14:59:36.309Z</lastmod>
     
   </url>
   

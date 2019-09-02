@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[Raspberry Pi 4 開箱文（Desktop Kit）]]></title>
     <url>%2FRaspberryPi%2Fraspberry-pi-4-desktop-kit-unboxing.html</url>
-    <content type="text"><![CDATA[2019 COSCUP有很多來自海外的社群，還有來自日本的Japanese Raspberry Pi Users Group 剛好我也是樹莓派玩很兇，就去社群攤位聊聊天 Masafumi Ohta（太田昌文）先生是日本樹莓派社群的負責人，也出過樹莓派的書 我們聊了好多樹莓派相關的技術和應用，然後抽中一組Raspberry Pi 4 Desktop Kit當成紀念 XDD COSCUP的目的，真的就是要去交朋友的！！ 先來介紹樹莓派4 model BRaspberry Pi 4 model B 可以說是現在最強的開發板之一了 有幾點和以前比較不一樣的，需要特別注意。 RAM的大小有1GB、2GB 和 4GB 可以選擇。 電源供應變成 5V/3A DC 的USB type C 了。（注意電源線要買沒有e-mark的哦！） 有兩個 mini HDMI 輸出，也就是說，支援雙螢幕啦！！還可以到 4k 哦！！ 支援藍牙 5.0 啦！ 從4個USB 2.0，變成2個 USB 3.0 和2個 USB 2.0。 整體規格看下來，真的屌打我那張Tinker Board，甚至是還勝過新出的Tinker Board S了。 看樣子可以讓我的工作很久的小server，Tinker Board退役了……。 開箱文開始Raspberry Pi 4 Desktop Kit 是樹莓派4的桌機組，內含： 電源供應器 micro HDMI 線材兩條 鼠鍵組 最新版 Raspberry Pi Beginner’s Guide 16GB SD卡，已安裝NOOBS Raspberry Pi 4 RAM 4GB版，含外殼 外包裝 外包裝的紅色，就是樹莓派專屬的紅色，整體很有樹莓派的設計風格。 外包裝的側面，標示著內含物。 打來會看到電源供應器、Pi 4含外殼、官方滑鼠，和一張SD卡 把上層拿起來，可以看到下層有官方鍵盤，鍵盤下方有Beginner’s Guide。 兩條mini HDMI線也放在下層 SD card SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！ 抽出micro SD卡後，看到是SanDisk EDGE 16GB （還好不是附雜牌的micro SD卡 XDD） 電源供應器 這組電源供應器的插頭型號是US，在台灣就可以直接插上插座囉！ 接頭也是USB Type C 的了，可惜線材和adapter是不能拆開的。 官方滑鼠 滑鼠盒的上下開口都有封條。是標準的三鍵滑鼠，可以相容所有的樹莓派產品。 滑鼠正面 滑鼠背面。跟我的手掌差不多大呢！果然是號稱人體工學設計。 Pi 4 本體 一打開盒子，發現外殼已經穿上了。 期待多年的 USB 3.0，真的實裝了！！ 把外殼拆開，可以看到該有的插孔都還在。 但是畫面輸出變成兩個 mini HDMI了。 官方鍵盤 鍵盤包裝的背面。居然寫著，提供3個 USB 2.0的孔！！ 鍵盤正面，是78鍵鍵盤。連接線和鍵盤本身是可以分開的。 鍵盤常見的 windows 鍵，也改成了樹莓派鍵。 鍵盤的上面還真的提供3個 USB 2.0 的孔，看樣子可以插其他的周邊裝置了！！ USB 3.0就留給大量讀寫的I/O吧。 mini HDMI 附贈兩條 mini HDMI，就可以直接做雙螢幕啦！！ 官方手冊 裡面還附了一本Raspberry Pi Beginner’s Guide，內容已經升級到支援 Pi 4 了。 看看內容，覺得教的還滿基本的！ 結語以上就是 Raspberry Pi 4 的開箱文啦！！ 大家也心動，想買一組 Desktop Kit 了嗎？ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+    <content type="text"><![CDATA[2019 COSCUP有很多來自海外的社群，還有來自日本的Japanese Raspberry Pi Users Group 剛好我也是樹莓派玩很兇，就去社群攤位聊聊天 Masafumi Ohta（太田昌文）先生是日本樹莓派社群的負責人，也出過樹莓派的書 我們聊了好多樹莓派相關的技術和應用，然後抽中一組Raspberry Pi 4 Desktop Kit當成紀念 XDD COSCUP的目的，真的就是要去交朋友的！！ 先來介紹樹莓派4 model BRaspberry Pi 4 model B 可以說是現在最強的開發板之一了 有幾點和以前比較不一樣的，需要特別注意。 RAM的大小有1GB、2GB 和 4GB 可以選擇。 電源供應變成 5V/3A DC 的USB type C 了。（注意電源線要買沒有e-mark的哦！） 有兩個 mini HDMI 輸出，也就是說，支援雙螢幕啦！！還可以到 4k 哦！！ 支援藍牙 5.0 啦！ 從4個USB 2.0，變成2個 USB 3.0 和2個 USB 2.0。 整體規格看下來，真的屌打我那張Tinker Board，甚至是還勝過新出的Tinker Board S了。 看樣子可以讓我的工作很久的小server，Tinker Board退役了……。 開箱文開始Raspberry Pi 4 Desktop Kit 是樹莓派4的桌機組，內含： 電源供應器 micro HDMI 線材兩條 鼠鍵組 最新版 Raspberry Pi Beginner’s Guide 16GB SD卡，已安裝NOOBS Raspberry Pi 4 RAM 4GB版，含外殼 外包裝 外包裝的紅色，就是樹莓派專屬的紅色，整體很有樹莓派的設計風格。 外包裝的側面，標示著內含物。 打來會看到電源供應器、Pi 4含外殼、官方滑鼠，和一張SD卡 把上層拿起來，可以看到下層有官方鍵盤，鍵盤下方有Beginner’s Guide。 兩條mini HDMI線也放在下層 SD card SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！ 抽出micro SD卡後，看到是SanDisk EDGE 16GB （還好不是附雜牌的micro SD卡 XDD） 電源供應器 這組電源供應器的插頭型號是US，在台灣就可以直接插上插座囉！ 接頭也是USB Type C 的了，可惜線材和adapter是不能拆開的。 官方滑鼠 滑鼠盒的上下開口都有封條。是標準的三鍵滑鼠，可以相容所有的樹莓派產品。 滑鼠正面 滑鼠背面。跟我的手掌差不多大呢！果然是號稱人體工學設計。 Pi 4 本體 一打開盒子，發現外殼已經穿上了。 期待多年的 USB 3.0，真的實裝了！！ 把外殼拆開，可以看到該有的插孔都還在。 但是畫面輸出變成兩個 mini HDMI了。 官方鍵盤 鍵盤包裝的背面。居然寫著，提供3個 USB 2.0的孔！！ 鍵盤正面，是78鍵鍵盤。連接線和鍵盤本身是可以分開的。 鍵盤常見的 windows 鍵，也改成了樹莓派鍵。 鍵盤的上面還真的提供3個 USB 2.0 的孔，看樣子可以插其他的周邊裝置了！！ USB 3.0就留給大量讀寫的I/O吧。 mini HDMI 附贈兩條 mini HDMI，就可以直接做雙螢幕啦！！ 官方手冊 裡面還附了一本Raspberry Pi Beginner’s Guide，內容已經升級到支援 Pi 4 了。 看看內容，覺得教的還滿基本的！ 結語以上就是 Raspberry Pi 4 的開箱文啦！！ 大家有心動，想要買一組 Desktop Kit 了嗎？ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
       <categories>
         <category>RaspberryPi</category>
       </categories>
@@ -168,13 +168,13 @@
     <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>
