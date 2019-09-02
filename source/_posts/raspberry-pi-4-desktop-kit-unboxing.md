@@ -13,7 +13,7 @@ tags:
 
 剛好我也是樹莓派玩很兇，就去社群攤位聊聊天
 
-Masafumi Ohta（太田昌文）先生是日本樹莓派社群的負責人，也出過[樹莓派的書](https://www.amazon.co.jp/%E5%A4%AA%E7%94%B0%E6%98%8C%E6%96%87/e/B00IZRP9DS)
+Masafumi Ohta（太田昌文）先生是日本樹莓派社群的負責人，也出過[樹莓派的書](https://www.amazon.co.jp/%E5%A4%AA%E7%94%B0%E6%98%8C%E6%96%87/e/B00IZRP9DS?utm_source=magic-panda-engineer&utm_medium=blog&utm_campaign=magic-panda-engineer)
 
 我們聊了好多樹莓派相關的技術和應用，然後抽中一組Raspberry Pi 4 Desktop Kit當成紀念 XDD
 
@@ -184,7 +184,9 @@ USB 3.0就留給大量讀寫的I/O吧。
 
 以上就是 Raspberry Pi 4 的開箱文啦！！
 
-大家也心動，想買一組 Desktop Kit 了嗎？
+
+
+大家有心動，想要買一組 Desktop Kit 了嗎？
 
 
 

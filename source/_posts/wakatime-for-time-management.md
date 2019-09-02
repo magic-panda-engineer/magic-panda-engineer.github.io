@@ -14,7 +14,7 @@ tags:
 在這裡推荐一個好工具來管理寫code寫專案的時間。
 
 <!-- more -->
-## [Wakatime](https://wakatime.com/?utm_source=magic-panda-engineer)
+## [Wakatime](https://wakatime.com/?utm_source=magic-panda-engineer&utm_medium=blog&utm_campaign=magic-panda-engineer)
 
 Wakatime是一個[開源專案](https://github.com/wakatime)的時間管理插件。
 
