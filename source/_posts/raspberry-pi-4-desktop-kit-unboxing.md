@@ -7,6 +7,7 @@ tags:
 - IOT
 - Unboxing
 - conference
+- Raspberry Pi 4
 ---
 
 2019 COSCUP有很多來自海外的社群，還有來自日本的Japanese Raspberry Pi Users Group 
@@ -53,25 +54,25 @@ Raspberry Pi 4 Desktop Kit 是樹莓派4的桌機組，內含：
 
 ## 外包裝
 
-![包裝](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing1.jpg)
+![Raspberry Pi 4 Desktop Kit 包裝](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing1.jpg)
 
 外包裝的紅色，就是樹莓派專屬的紅色，整體很有樹莓派的設計風格。
 
 ---
 
-![包裝](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing2.jpg)
+![Raspberry Pi 4 Desktop Kit 包裝](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing2.jpg)
 
 外包裝的側面，標示著內含物。
 
 ---
 
-![內層](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing3.jpg)
+![Raspberry Pi 4 Desktop Kit 內層](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing3.jpg)
 
 打來會看到電源供應器、Pi 4含外殼、官方滑鼠，和一張SD卡
 
 ---
 
-![下層](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing4.jpg)
+![Raspberry Pi 4 Desktop Kit 下層](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-unboxing4.jpg)
 
 把上層拿起來，可以看到下層有官方鍵盤，鍵盤下方有Beginner’s Guide。
 
@@ -80,13 +81,13 @@ Raspberry Pi 4 Desktop Kit 是樹莓派4的桌機組，內含：
 
 ## SD card
 
-![SD card](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-sd1.jpg)
+![Raspberry Pi 4 Desktop Kit SD card](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-sd1.jpg)
 
 SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ---
 
-![SD card](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-sd2.jpg)
+![Raspberry Pi 4 Desktop Kit SD card](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-sd2.jpg)
 
 抽出micro SD卡後，看到是SanDisk EDGE 16GB
 
@@ -95,7 +96,7 @@ SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ## 電源供應器
 
-![Power](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-power.jpg)
+![Raspberry Pi 4 Desktop Kit Power](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-power.jpg)
 
 這組電源供應器的插頭型號是US，在台灣就可以直接插上插座囉！
 
@@ -104,26 +105,26 @@ SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ## 官方滑鼠
 
-![mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse1.jpg)
+![Raspberry Pi 4 Desktop Kit mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse1.jpg)
 
 滑鼠盒的上下開口都有封條。是標準的三鍵滑鼠，可以相容所有的樹莓派產品。
 
 ---
 
-![mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse2.jpg)
+![Raspberry Pi 4 Desktop Kit mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse2.jpg)
 
 滑鼠正面
 
 ---
 
-![mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse3.jpg)
+![Raspberry Pi 4 Desktop Kit mouse](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-mouse3.jpg)
 
 滑鼠背面。跟我的手掌差不多大呢！果然是號稱人體工學設計。
 
 
 ## Pi 4 本體
 
-![pi 4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-pi1.jpg)
+![Raspberry Pi 4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-pi1.jpg)
 
 一打開盒子，發現外殼已經穿上了。
 
@@ -131,7 +132,7 @@ SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ---
 
-![pi 4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-pi2.jpg)
+![Raspberry Pi 4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-pi2.jpg)
 
 把外殼拆開，可以看到該有的插孔都還在。
 
@@ -140,13 +141,13 @@ SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ## 官方鍵盤
 
-![keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard1.jpg)
+![Raspberry Pi 4 Desktop Kit keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard1.jpg)
 
 鍵盤包裝的背面。居然寫著，提供3個 USB 2.0的孔！！
 
 ---
 
-![keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard2.jpg)
+![Raspberry Pi 4 Desktop Kit keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard2.jpg)
 
 鍵盤正面，是78鍵鍵盤。連接線和鍵盤本身是可以分開的。
 
@@ -154,7 +155,7 @@ SD卡含adapter，上面印有樹莓派的logo，真的超可愛！！
 
 ---
 
-![keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard3.jpg)
+![Raspberry Pi 4 Desktop Kit keyboard](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-keyboard3.jpg)
 
 鍵盤的上面還真的提供3個 USB 2.0 的孔，看樣子可以插其他的周邊裝置了！！
 
@@ -163,19 +164,19 @@ USB 3.0就留給大量讀寫的I/O吧。
 
 ## mini HDMI
 
-![hdmi](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-hdmi.jpg)
+![Raspberry Pi 4 Desktop Kit mini hdmi](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-hdmi.jpg)
 
 附贈兩條 mini HDMI，就可以直接做雙螢幕啦！！
 
 ## 官方手冊 
 
-![guide](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-guide1.jpg)
+![Raspberry Pi 4 Desktop Kit guide](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-guide1.jpg)
 
 裡面還附了一本Raspberry Pi Beginner’s Guide，內容已經升級到支援 Pi 4 了。
 
 ---
 
-![guide](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-guide2.jpg)
+![Raspberry Pi 4 Desktop Kit guide](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20190901-guide2.jpg)
 
 看看內容，覺得教的還滿基本的！
 
