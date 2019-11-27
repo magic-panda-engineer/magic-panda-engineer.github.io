@@ -26,6 +26,8 @@ Keychron 出了很多款鍵盤，都有 Mac layout，像是 K1, K2系列都頗�
 
 到了今年2019中，有數字鍵盤的Keychron K4終於在 Kickstarter 上面募資啦！！
 
+Kickstarter上募資的，鋁合金版K4含運費是93美金，加購手托再加19美金。
+
 **本篇文章會先介紹鍵盤本身，接著圖文開箱，接著優缺點比較，最後放上試打影片**
 
 # 先來介紹Keychron K4
@@ -134,7 +136,7 @@ Keychron K4 的拔鍵器長這樣子，很好拔很順手。
 
 ## Keychron K4 鍵盤本體
 
-![switches side of Keychron K4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20191126-size-of-Keychron-K4.jpg)
+![switches side of Keychron K4](https://magic-panda-engineer.s3-ap-northeast-1.amazonaws.com/blog-img/20191126-switches-side-of-Keychron-K4.jpg)
 
 Keychron K4 的側面有電源線、裝置切換開關，和藍牙/有線切換開關。
 
