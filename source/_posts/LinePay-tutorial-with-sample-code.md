@@ -4,7 +4,8 @@ date: 2019-11-05 21:47:15
 categories: 
 - ChatBot
 tags:
-- linepay教學
+- line pay 串接教學
+- line pay 教學
 - line
 - 線上支付
 ---
