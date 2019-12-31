@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[如何將terminal印出的log存成txt檔]]></title>
+    <url>%2FLinux%2Fsave-terminal-log.html</url>
+    <content type="text"><![CDATA[這篇文章就當2020年的第一篇文章吧！ 軟體工程師在開發程式時，會常常會將讀取到數值在terminal印出來 有時候印出的數值量太大，很不方便在terminal裡仔細看這些資料，或是還需要其他的分析工具來分析 這時候就會需要把terminal印出的數值儲存起來的功能 在開始跑印log的程式之前，先在terminal裡使用這個指令 1$ script output.txt 這時候你的資料夾內就會多出了一個output.txt的檔案，印出的log就會存在這個檔案裡囉！ 在你log印完了之後，再輸入這個指令做結束 1$ exit 這樣子就可以把terminal裡印出的log存檔起來，就可以做後續的分析或操作啦！！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>將terminal印出的log存檔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[自然語言理解的 Line 機器人實戰]]></title>
     <url>%2FChatBot%2Fdialogflow-in-AT-Tech.html</url>
-    <content type="text"><![CDATA[這是 2019/12/28 在AI Tech社群，於微程式夢森林分享的投影片。 主要是手把手教大家 Dialogflow 與 Line 串接的使用。 課後真的有許多同學做出自己的 Line Bot， 反應熱烈，提問討論超久。 可以看著投影片內的截圖，一步步打造自己的聊天機器人。 自然語言理解的 Line 機器人實戰 from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+    <content type="text"><![CDATA[這是 2019/12/28 在AI Tech社群，於微程式夢森林分享的投影片。 主要是手把手教大家 Dialogflow 與 Line 串接的使用。 課後有許多同學做出自己的 Line Bot，反應熱烈，提問討論超久。 可以看著投影片內的截圖，一步步打造自己的聊天機器人。 自然語言理解的 Line 機器人實戰 from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
       <categories>
         <category>ChatBot</category>
       </categories>
