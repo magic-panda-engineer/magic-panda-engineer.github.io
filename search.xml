@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用Intent在Android APP中打開其他app]]></title>
+    <url>%2FAndroid%2Fandroid-app-jump-to-other-app.html</url>
+    <content type="text"><![CDATA[Android開發者常常會碰到，在Android APP內打開其他APP的需求。 只要善用 Intent，就可以達成這個需求啦！ 這段程式碼示範了如何打開其他的APP。 在客服的需求，很常會需要打開FB Messager，因此本篇示範如何打開FB Messager到特定的頁面。 注意你的手機需安裝FB Messager。 Uri.parse的部份可以可以自行替換成其他的APP Scheme，也就可以跳轉到其他APP了。 1234567891011try&#123; startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.me/111417983616253"))); //開啟大魔術熊貓工程師的粉絲專頁Messager&#125;catch (ActivityNotFoundException ex)&#123; Toast.makeText(getContext(), "無法打開Facebook Messenger APP", Toast.LENGTH_SHORT).show();&#125; 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Android</category>
+      </categories>
+      <tags>
+        <tag>Android Intent</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[如何將terminal印出的log存成txt檔]]></title>
     <url>%2FLinux%2Fsave-terminal-log.html</url>
     <content type="text"><![CDATA[這篇文章就當2020年的第一篇文章吧！ 軟體工程師在開發程式時，會常常會將讀取到數值在terminal印出來 有時候印出的數值量太大，很不方便在terminal裡仔細看這些資料，或是還需要其他的分析工具來分析 這時候就會需要把terminal印出的數值儲存起來的功能 在開始跑印log的程式之前，先在terminal裡使用這個指令 1$ script output.txt 這時候你的資料夾內就會多出了一個output.txt的檔案，印出的log就會存在這個檔案裡囉！ 在你log印完了之後，再輸入這個指令做結束 1$ exit 這樣子就可以把terminal裡印出的log存檔起來，就可以做後續的分析或操作啦！！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
