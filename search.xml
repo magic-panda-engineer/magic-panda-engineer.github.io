@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[業界都在用的自然語言理解工具，教你快速建構Line對話機器人]]></title>
+    <url>%2FChatBot%2Fdialogflow-in-AIA.html</url>
+    <content type="text"><![CDATA[這是2020/01/03 在台灣人工智慧學校所做的手把手實做課程投影片。 主要在是Dialogflow 與 Line Bot的教學。 演講完畢後許多同學都做出自己的Line Bot，反應熱烈，提問討論超久。 可以看著投影片內的截圖以回憶課程，一步步打造自己的聊天機器人。 業界都在用的自然語言理解工具，教你快速建構Line對話機器人 from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>ChatBot</category>
+      </categories>
+      <tags>
+        <tag>LINE bot</tag>
+        <tag>Dialogflow</tag>
+        <tag>LUIS</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[用Intent在Android APP中打開其他app]]></title>
     <url>%2FAndroid%2Fandroid-app-jump-to-other-app.html</url>
     <content type="text"><![CDATA[Android開發者常常會碰到，在Android APP內打開其他APP的需求。 只要善用 Intent，就可以達成這個需求啦！ 這段程式碼示範了如何打開其他的APP。 在客服的需求，很常會需要打開FB Messager，因此本篇示範如何打開FB Messager到特定的頁面。 注意你的手機需安裝FB Messager。 Uri.parse的部份可以可以自行替換成其他的APP Scheme，也就可以跳轉到其他APP了。 1234567891011try&#123; startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("http://m.me/111417983616253"))); //開啟大魔術熊貓工程師的粉絲專頁Messager&#125;catch (ActivityNotFoundException ex)&#123; Toast.makeText(getContext(), "無法打開Facebook Messenger APP", Toast.LENGTH_SHORT).show();&#125; 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>

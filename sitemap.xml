@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-in-AIA</loc>
+    
+    <lastmod>2020-01-03T13:46:45.826Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-and-luis-to-line-chat-bot</loc>
+    
+    <lastmod>2020-01-03T13:45:36.312Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-in-AT-Tech</loc>
+    
+    <lastmod>2020-01-03T13:45:33.503Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/Android/android-app-jump-to-other-app</loc>
     
     <lastmod>2020-01-01T16:04:38.324Z</lastmod>
@@ -16,21 +37,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-in-AT-Tech</loc>
-    
-    <lastmod>2019-12-28T14:45:43.637Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/keyboard/keychron-k4-unboxing</loc>
+    <loc>https://magic-panda-engineer.github.io/work/myth-of-10000-hours-effort</loc>
     
     <lastmod>2019-12-17T15:30:02.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/work/myth-of-10000-hours-effort</loc>
+    <loc>https://magic-panda-engineer.github.io/keyboard/keychron-k4-unboxing</loc>
     
     <lastmod>2019-12-17T15:30:02.465Z</lastmod>
     
@@ -44,20 +58,6 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-and-luis-to-line-chat-bot</loc>
-    
-    <lastmod>2019-12-17T15:30:02.464Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
-    
-    <lastmod>2019-12-17T15:30:02.463Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://magic-panda-engineer.github.io/ChatBot/LinePay-tutorial-with-sample-code</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
@@ -66,6 +66,13 @@
   
   <url>
     <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
+    
+    <lastmod>2019-12-17T15:30:02.463Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
