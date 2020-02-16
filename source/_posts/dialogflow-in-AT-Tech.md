@@ -8,11 +8,12 @@ tags:
 - Dialogflow
 - LUIS
 - NLP
+- slides
 ---
 
 這是 2019/12/28 在AI Tech社群，於微程式夢森林分享的投影片。
 
-主要是手把手教大家 Dialogflow 與 Line 串接的使用。
+主要是手把手教大家 Dialogflow 與 Line 串接的使用，並且介紹 Dialogflow 和 LUIS 的差別。
 
 課後有許多同學做出自己的 Line Bot，反應熱烈，提問討論超久。
 

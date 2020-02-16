@@ -8,11 +8,12 @@ tags:
 - Dialogflow
 - LUIS
 - NLP
+- slides
 ---
 
 這是2020/01/03 在台灣人工智慧學校所做的手把手實做課程投影片。
 
-主要在是Dialogflow 與 Line Bot的教學。
+主要在是Dialogflow 與 Line Bot的教學，並且介紹 Dialogflow 和 LUIS 的差別。
 
 演講完畢後許多同學都做出自己的Line Bot，反應熱烈，提問討論超久。
 

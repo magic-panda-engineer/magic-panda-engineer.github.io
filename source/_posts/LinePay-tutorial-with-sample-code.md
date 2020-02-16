@@ -8,6 +8,7 @@ tags:
 - line pay 教學
 - line
 - 線上支付
+- slides
 ---
 
 這份投影片是在2019/10/23、於Chatbot Developers Taiwan分享的內容。

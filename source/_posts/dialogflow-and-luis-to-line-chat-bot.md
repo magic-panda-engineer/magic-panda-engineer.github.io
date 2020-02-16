@@ -8,6 +8,7 @@ tags:
 - Dialogflow
 - LUIS
 - NLP
+- slides
 ---
 
 
