@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service</loc>
+    
+    <lastmod>2020-05-04T16:32:07.234Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/deploy-develop-linebot-on-azure</loc>
+    
+    <lastmod>2020-05-04T15:45:24.204Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/Coding-Life/the-origin-of-coding-life</loc>
+    
+    <lastmod>2020-05-04T15:33:42.277Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/AWS/deploy-wordpress-on-aws</loc>
     
     <lastmod>2020-02-16T14:43:58.139Z</lastmod>
@@ -44,13 +65,6 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/Coding-Life/the-origin-of-coding-life</loc>
-    
-    <lastmod>2020-01-30T15:42:25.707Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://magic-panda-engineer.github.io/Android/android-app-jump-to-other-app</loc>
     
     <lastmod>2020-01-01T16:04:38.324Z</lastmod>
@@ -86,14 +100,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
+    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
+    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
@@ -198,14 +212,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/tags/index</loc>
+    <loc>https://magic-panda-engineer.github.io/categories/index</loc>
     
     <lastmod>2019-04-16T17:02:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/categories/index</loc>
+    <loc>https://magic-panda-engineer.github.io/tags/index</loc>
     
     <lastmod>2019-04-16T17:02:25.000Z</lastmod>
     

@@ -98,17 +98,18 @@
 
 
 
-  <meta name="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
-<meta name="keywords" content="Android,AI,front-end,back-end,IOT,前端,後端,資料庫,python,C#,Java,kotlin">
-<meta property="og:type" content="website">
-<meta property="og:title" content="大魔術熊貓工程師">
-<meta property="og:url" content="https://magic-panda-engineer.github.io/tags/slides/index.html">
+  <meta name="description" content="近幾年 Line 聊天機器人爆紅，許多軟體工程師多少都會碰到聊天機器人的需求。 為了讓聊天機器人開發更方便，微軟推出了一項非常強大的工具：Azure Bot Service。 我試玩了Azure Bot Service之後，想來分享一些LINE bot開發心得。">
+<meta name="keywords" content="LINE bot,Azure,LUIS,NLP,LIFF">
+<meta property="og:type" content="article">
+<meta property="og:title" content="討論用 Azure Bot Service 開發 LINE bot">
+<meta property="og:url" content="https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service.html">
 <meta property="og:site_name" content="大魔術熊貓工程師">
-<meta property="og:description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+<meta property="og:description" content="近幾年 Line 聊天機器人爆紅，許多軟體工程師多少都會碰到聊天機器人的需求。 為了讓聊天機器人開發更方便，微軟推出了一項非常強大的工具：Azure Bot Service。 我試玩了Azure Bot Service之後，想來分享一些LINE bot開發心得。">
 <meta property="og:locale" content="zh-TW">
+<meta property="og:updated_time" content="2020-05-04T16:32:07.234Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="大魔術熊貓工程師">
-<meta name="twitter:description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+<meta name="twitter:title" content="討論用 Azure Bot Service 開發 LINE bot">
+<meta name="twitter:description" content="近幾年 Line 聊天機器人爆紅，許多軟體工程師多少都會碰到聊天機器人的需求。 為了讓聊天機器人開發更方便，微軟推出了一項非常強大的工具：Azure Bot Service。 我試玩了Azure Bot Service之後，想來分享一些LINE bot開發心得。">
 
 
 
@@ -116,7 +117,7 @@
 
   
   
-  <link rel="canonical" href="https://magic-panda-engineer.github.io/tags/slides/">
+  <link rel="canonical" href="https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service">
 
 
 
@@ -126,7 +127,7 @@
   };
 </script>
 
-  <title>標籤: slides | 大魔術熊貓工程師</title>
+  <title>討論用 Azure Bot Service 開發 LINE bot | 大魔術熊貓工程師</title>
   
 
 
@@ -185,7 +186,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -265,7 +266,7 @@
         
         
           
-          <li class="menu-item menu-item-tags menu-item-active">
+          <li class="menu-item menu-item-tags">
 
     
     
@@ -376,265 +377,310 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block tag">
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h2>slides<small>標籤</small>
-        </h2>
-      </div>
-
-      
-        
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service.html">
 
-      <h3 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="KoKo Mexcelsa">
+      <meta itemprop="description" content="努力把多年來整理在Evernote裡的技術筆記搬到這個Hexo部落格">
+      <meta itemprop="image" content="https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="大魔術熊貓工程師">
+    </span>
+
+    
+      <header class="post-header">
+
         
-          <a class="post-title-link" href="/ChatBot/deploy-develop-linebot-on-azure.html" itemprop="url">
-            
-              <span itemprop="name">用 Azure 快速部署與開發 LINE bot</span>
-            
-          </a>
         
-      </h3>
+          <h2 class="post-title" itemprop="name headline">討論用 Azure Bot Service 開發 LINE bot
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-04-21T21:30:01+08:00" content="2020-04-21">
-          04-21
-        </time>
-      </div>
+              
+            
+          </h2>
+        
 
-    </header>
-  </article>
+        <div class="post-meta">
+          <span class="post-time">
 
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">發表於</span>
+              
+
+              
+                
+              
+
+              <time title="創建時間：2020-01-04 18:47:14" itemprop="dateCreated datePublished" datetime="2020-01-04T18:47:14+08:00">2020-01-04</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新於</span>
+                
+                <time title="修改時間：2020-05-05 00:32:07" itemprop="dateModified" datetime="2020-05-05T00:32:07+08:00">2020-05-05</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分類於</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/ChatBot/" itemprop="url" rel="index"><span itemprop="name">ChatBot</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+              
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+            
+                <span class="post-meta-item-text">評論數：</span>
+                <a href="/ChatBot/discuss-azure-bot-service.html#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="ChatBot/discuss-azure-bot-service.html" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="post-meta-item-icon">
+            <i class="fa fa-eye"></i>
+             閱讀次數： 
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>
+            </span>
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/AWS/deploy-wordpress-on-aws.html" itemprop="url">
-            
-              <span itemprop="name">簡介Wordpress部署在AWS上的幾種架構</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-02-16T22:35:09+08:00" content="2020-02-16">
-          02-16
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
 
       
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/ChatBot/dialogflow-in-AIA.html" itemprop="url">
-            
-              <span itemprop="name">業界都在用的自然語言理解工具，教你快速建構Line對話機器人</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2020-01-03T21:43:19+08:00" content="2020-01-03">
-          01-03
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/ChatBot/dialogflow-in-AT-Tech.html" itemprop="url">
-            
-              <span itemprop="name">自然語言理解的 Line 機器人實戰</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-12-28T22:32:56+08:00" content="2019-12-28">
-          12-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/ChatBot/dialogflow-and-luis-to-line-chat-bot.html" itemprop="url">
-            
-              <span itemprop="name">三十分鐘內，不用寫程式，教你打造具自然語言能力的聊天機器人</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-11-09T14:32:56+08:00" content="2019-11-09">
-          11-09
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/ChatBot/LinePay-tutorial-with-sample-code.html" itemprop="url">
-            
-              <span itemprop="name">LinePay教學附範例程式碼</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-11-05T21:47:15+08:00" content="2019-11-05">
-          11-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/work/negative-examples-for-remote-work.html" itemprop="url">
-            
-              <span itemprop="name">從負面案例來討論接案工程師該有什麼軟技能</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-29T01:00:00+08:00" content="2019-08-29">
-          08-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-      
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h3 class="post-title">
-        
-          <a class="post-title-link" href="/AI/yolo-v1-slides.html" itemprop="url">
-            
-              <span itemprop="name">YOLO V1 論文導讀投影片</span>
-            
-          </a>
-        
-      </h3>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-08-28T18:13:10+08:00" content="2019-08-28">
-          08-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+        <p>近幾年 Line 聊天機器人爆紅，許多軟體工程師多少都會碰到聊天機器人的需求。</p>
+<p>為了讓聊天機器人開發更方便，微軟推出了一項非常強大的工具：Azure Bot Service。</p>
+<p>我試玩了Azure Bot Service之後，想來分享一些LINE bot開發心得。</p>
+<a id="more"></a>
+<p>Azure Bot Service 是微軟推出的一項聊天機器人服務，如其名是建構在 Azure 上面的一項雲服務。</p>
+<p>可用於輪替簡單、重複性工作，例如預訂晚餐或蒐集設定檔資訊。 </p>
+<p>使用者可使用文字、互動式卡片和語音來與 Bot 交談。 </p>
+<p>和 Bot 互動可以是快速的問與答，用 Rule-base 的方式來建立簡單規則。</p>
+<p>也可以配合使用 LUIS ，建立複雜的對話機制。</p>
+<p>總而言之，和聊天對話相關的，我們都可使用 Azure Bot Service 很輕鬆的辦到。</p>
+<hr>
+<p>現今市場上的 Line Bot，多是以 LINE Front-end Framework (LIFF) 為主的方式來呈現的。</p>
+<p>LIFF 簡單來說，就是做一個網站在 Line Bot裡面，透過 Line 的 library 和網站做互動。</p>
+<p>同時也會搭配 Rich Menu 、ImageMap 等方式來呈現，讓使用者只需要點擊按鈕就可以達到使用目的。</p>
+<p>Azure Bot Service 裡面也是有提供了類似的功能，如互動式卡片之類的，也是可以串接到 Line 上面。</p>
+<p>Azure Bot Service 裡面，也包含了一個 app serivce。 </p>
+<p>App service 就是一個host服務，可以部署你的網站上去。因此我們就可以用 LIFF 的方式，來製做我們的 Line Bot。</p>
+<hr>
+<p>有了LIFF、Rich Menu、ImageMap 等等和 user 互動的形式，使用自然語言對話的場合就比較少了一些了。</p>
+<p>終究打字還是會比按按鈕來得麻煩一些。</p>
+<p>但是如果真的有需要使用自然語言對話的方式來和客戶互動，例如客服之類的bot，就可以使用微軟的自然語言工具 Language Understanding Intelligent Service (LUIS) 來達成。</p>
+<p>當然 Azure Bot Service 可以開一個 LUIS 起來做串接。</p>
+<hr>
+<p>總之，Azure Bot Service 包含了許多現在開發 Line Bot 很重要的幾項功能，真的很不錯。</p>
+<p>我當年做通勤學的時候，只用了一個 app service，幹出了一大堆功能，現在想想真的血汗 XDDD 。</p>
+<hr>
+<p><strong>如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！</strong><br><strong>也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！</strong></p>
 
       
     </div>
 
+    
+      
+
+  <div class="popular-posts-header">相關文章</div>
+  <ul class="popular-posts">
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/ChatBot/deploy-develop-linebot-on-azure.html" rel="bookmark">用 Azure 快速部署與開發 LINE bot</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/ChatBot/dialogflow-and-luis-to-line-chat-bot.html" rel="bookmark">三十分鐘內，不用寫程式，教你打造具自然語言能力的聊天機器人</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/ChatBot/dialogflow-in-AIA.html" rel="bookmark">業界都在用的自然語言理解工具，教你快速建構Line對話機器人</a></div>
+      
+    </li>
+  
+    <li class="popular-posts-item">
+      
+      
+      <div class="popular-posts-title"><a href="/ChatBot/dialogflow-in-AT-Tech.html" rel="bookmark">自然語言理解的 Line 機器人實戰</a></div>
+      
+    </li>
+  
+  </ul>
+
+
+    
+
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/LINE-bot/" rel="tag"># LINE bot</a>
+          
+            <a href="/tags/Azure/" rel="tag"># Azure</a>
+          
+            <a href="/tags/LUIS/" rel="tag"># LUIS</a>
+          
+            <a href="/tags/NLP/" rel="tag"># NLP</a>
+          
+            <a href="/tags/LIFF/" rel="tag"># LIFF</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/ChatBot/dialogflow-in-AIA.html" rel="next" title="業界都在用的自然語言理解工具，教你快速建構Line對話機器人">
+                <i class="fa fa-chevron-left"></i> 業界都在用的自然語言理解工具，教你快速建構Line對話機器人
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/Coding-Life/the-origin-of-coding-life.html" rel="prev" title="20年前，寫程式的起點">
+                20年前，寫程式的起點 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+  </div>
 
 
           </div>
           
+
+  
+    <div class="comments" id="comments">
+      <div id="disqus_thread">
+        <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+      </div>
+    </div>
+
+  
+
+
 
         </div>
         
@@ -1066,6 +1112,10 @@
 
 
   
+  <script src="/js/scrollspy.js?v=7.1.0"></script>
+<script src="/js/post-details.js?v=7.1.0"></script>
+
+
 
   
 
@@ -1084,9 +1134,28 @@
   <script id="dsq-count-scr" src="https://magic-panda-engineer.disqus.com/count.js" async></script>
 
 
+<script>
+  var disqus_config = function() {
+    this.page.url = "https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service.html";
+    this.page.identifier = "ChatBot/discuss-azure-bot-service.html";
+    this.page.title = '討論用 Azure Bot Service 開發 LINE bot';
+    };
+  function loadComments() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://magic-panda-engineer.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', '' + +new Date());
+    (d.head || d.body).appendChild(s);
+  }
+  
+    loadComments();
+  
+</script>
 
 
 
+
+
+  
 
 
   

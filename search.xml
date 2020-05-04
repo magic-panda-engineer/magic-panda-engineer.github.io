@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[用 Azure 快速部署與開發 LINE bot]]></title>
+    <url>%2FChatBot%2Fdeploy-develop-linebot-on-azure.html</url>
+    <content type="text"><![CDATA[這是2020/04/21 在ChatBot Meetup 所分享的內容。 本次演講主要聚焦把開速部署和開發LINE bot，介紹app service、blob，以及微軟自然語言工具 LUIS。 本次演講是在線上直播的live demov，迴響超熱烈，被問了許多問題。 讀者可以看著投影片的內容，看看Azure有什麼可以快速開發Line Bot 的威力。 用 Azure 快速部署與開發 LINE bot from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>ChatBot</category>
+      </categories>
+      <tags>
+        <tag>slides</tag>
+        <tag>LINE bot</tag>
+        <tag>Azure</tag>
+        <tag>LUIS</tag>
+        <tag>NLP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[簡介Wordpress部署在AWS上的幾種架構]]></title>
     <url>%2FAWS%2Fdeploy-wordpress-on-aws.html</url>
     <content type="text"><![CDATA[這是2020/02/16 在Wordpress台中小聚所分享的投影片。 本次演講主要聚焦把Wordpress部署到AWS架構上的設計，介紹了便宜適合部署 Wordpress 的方案，也介紹了適合 Wordpress 水平擴展的架構。 本次演講的迴響超熱烈，大家一直討論不停，感到相當開心。 讀者可以看著投影片的內容，理解幾種Wordpress部署到AWS架構，其中比較重要的兩項是 Lightsail 和 Elastic Beanstalk。 簡介Wordpress部署在AWS上的幾種架構 from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
@@ -17,12 +32,27 @@
   <entry>
     <title><![CDATA[20年前，寫程式的起點]]></title>
     <url>%2FCoding-Life%2Fthe-origin-of-coding-life.html</url>
-    <content type="text"><![CDATA[今年過年因為武漢肺炎的關係，沒有出去走春 打打麻將之外的日子，就是整理房間 結果意外翻出了一本書，這本書就是我20年前開始寫web所買的書：純手工打造–黃金網頁。 20年前的我還是個國中生，開始在用FrontPage在寫網頁，那個年代許多人都想要做一個自己的「烘焙雞」（Homepage）。 當時我就做了一個自己的網站，叫做「豬豬的第一個家」，裡面主要收集各種 Javascript 的特效，還有一些惡意的 Javascript 程式（例如說一直跳出 alert 讓你關不完的那種）。 跑馬燈效果是那時候最流行的特效之一，記得我還做了一個跑馬燈生成器，可以客製化自己想要的跑馬燈。 可惜這個網站隨著電腦的搬移，就再也找不到原始程式碼了。 然後過沒多久，就發生了.com泡沫，資訊業就開始走下坡了 orz 記得這本書是在一個書展裡買的，那個活動是三本書1000元，可是我只想要這本書。 於是還是國中生的我，就到處問人，有沒有人要一起湊三本打折，我可以多付那個一塊錢。 問了好久，好不容易問到一個大葛格，他要買兩本遊戲攻略，剛好可以跟我湊三本1000元。 那個大葛格還問我怎麼不玩電腦遊戲，我當時回答還是寫網站就是我的電腦遊戲 XDDDD。 這是這本書的封面，JAVA特效這個詞一看就有問題 XDDD 這張是書的版權頁，2000年11月出版的書，距今快要20年了 這本書買回家之後，就開始按照裡面的內容學習。 記得當時最討厭寫CSS，覺得做出想要的畫面好累，到現在即使有了SCSS這麼給力的工具，我還是最不喜歡做切版這件事 XDDDD 這本書做到後面，都是Javascript的範例，不過這本書很顯然的把 Java 和 Javascript 給搞混了。 那時候還小，也還真的分不清楚兩者之間的差異，15年後重拾程式這個技能，才知道原來狗和熱狗是不一樣的東西。 總之發現這本書真的又驚又喜，讓我想起了學生時代一頭栽進寫code的日子 如果那時候有繼續走資訊業這條路，不知道又可以走多遠呢？ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+    <content type="text"><![CDATA[今年過年因為新冠肺炎的關係，沒有出去走春 打打麻將之外的日子，就是整理房間 結果意外翻出了一本書，這本書就是我20年前開始寫web所買的書：純手工打造–黃金網頁。 20年前的我還是個國中生，開始在用FrontPage在寫網頁，那個年代許多人都想要做一個自己的「烘焙雞」（Homepage）。 當時我就做了一個自己的網站，叫做「豬豬的第一個家」，裡面主要收集各種 Javascript 的特效，還有一些惡意的 Javascript 程式（例如說一直跳出 alert 讓你關不完的那種）。 跑馬燈效果是那時候最流行的特效之一，記得我還做了一個跑馬燈生成器，可以客製化自己想要的跑馬燈。 可惜這個網站隨著電腦的搬移，就再也找不到原始程式碼了。 然後過沒多久，就發生了.com泡沫，資訊業就開始走下坡了 orz 記得這本書是在一個書展裡買的，那個活動是三本書1000元，可是我只想要這本書。 於是還是國中生的我，就到處問人，有沒有人要一起湊三本打折，我可以多付那個一塊錢。 問了好久，好不容易問到一個大葛格，他要買兩本遊戲攻略，剛好可以跟我湊三本1000元。 那個大葛格還問我怎麼不玩電腦遊戲，我當時回答還是寫網站就是我的電腦遊戲 XDDDD。 這是這本書的封面，JAVA特效這個詞一看就有問題 XDDD 這張是書的版權頁，2000年11月出版的書，距今快要20年了 這本書買回家之後，就開始按照裡面的內容學習。 記得當時最討厭寫CSS，覺得做出想要的畫面好累，到現在即使有了SCSS這麼給力的工具，我還是最不喜歡做切版這件事 XDDDD 這本書做到後面，都是Javascript的範例，不過這本書很顯然的把 Java 和 Javascript 給搞混了。 那時候還小，也還真的分不清楚兩者之間的差異，15年後重拾程式這個技能，才知道原來狗和熱狗是不一樣的東西。 總之發現這本書真的又驚又喜，讓我想起了學生時代一頭栽進寫code的日子 如果那時候有繼續走資訊業這條路，不知道又可以走多遠呢？ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
       <categories>
         <category>Coding Life</category>
       </categories>
       <tags>
         <tag>寫程式的起點</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[討論用 Azure Bot Service 開發 LINE bot]]></title>
+    <url>%2FChatBot%2Fdiscuss-azure-bot-service.html</url>
+    <content type="text"><![CDATA[近幾年 Line 聊天機器人爆紅，許多軟體工程師多少都會碰到聊天機器人的需求。 為了讓聊天機器人開發更方便，微軟推出了一項非常強大的工具：Azure Bot Service。 我試玩了Azure Bot Service之後，想來分享一些LINE bot開發心得。 Azure Bot Service 是微軟推出的一項聊天機器人服務，如其名是建構在 Azure 上面的一項雲服務。 可用於輪替簡單、重複性工作，例如預訂晚餐或蒐集設定檔資訊。 使用者可使用文字、互動式卡片和語音來與 Bot 交談。 和 Bot 互動可以是快速的問與答，用 Rule-base 的方式來建立簡單規則。 也可以配合使用 LUIS ，建立複雜的對話機制。 總而言之，和聊天對話相關的，我們都可使用 Azure Bot Service 很輕鬆的辦到。 現今市場上的 Line Bot，多是以 LINE Front-end Framework (LIFF) 為主的方式來呈現的。 LIFF 簡單來說，就是做一個網站在 Line Bot裡面，透過 Line 的 library 和網站做互動。 同時也會搭配 Rich Menu 、ImageMap 等方式來呈現，讓使用者只需要點擊按鈕就可以達到使用目的。 Azure Bot Service 裡面也是有提供了類似的功能，如互動式卡片之類的，也是可以串接到 Line 上面。 Azure Bot Service 裡面，也包含了一個 app serivce。 App service 就是一個host服務，可以部署你的網站上去。因此我們就可以用 LIFF 的方式，來製做我們的 Line Bot。 有了LIFF、Rich Menu、ImageMap 等等和 user 互動的形式，使用自然語言對話的場合就比較少了一些了。 終究打字還是會比按按鈕來得麻煩一些。 但是如果真的有需要使用自然語言對話的方式來和客戶互動，例如客服之類的bot，就可以使用微軟的自然語言工具 Language Understanding Intelligent Service (LUIS) 來達成。 當然 Azure Bot Service 可以開一個 LUIS 起來做串接。 總之，Azure Bot Service 包含了許多現在開發 Line Bot 很重要的幾項功能，真的很不錯。 我當年做通勤學的時候，只用了一個 app service，幹出了一大堆功能，現在想想真的血汗 XDDD 。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>ChatBot</category>
+      </categories>
+      <tags>
+        <tag>LINE bot</tag>
+        <tag>Azure</tag>
+        <tag>LUIS</tag>
+        <tag>NLP</tag>
+        <tag>LIFF</tag>
       </tags>
   </entry>
   <entry>
@@ -35,9 +65,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -72,9 +102,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -154,9 +184,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -338,9 +368,9 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[關於KoKo Mexcelsa]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
+    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[tags]]></title>
@@ -348,8 +378,8 @@
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
-    <content type="text"></content>
+    <title><![CDATA[關於KoKo Mexcelsa]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
   </entry>
 </search>
