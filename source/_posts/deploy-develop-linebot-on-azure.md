@@ -5,7 +5,7 @@ categories:
 - ChatBot
 tags:
 - LINE bot
-- Azure
+- Azure Bot Service
 - LUIS
 - NLP
 - slides

@@ -6,7 +6,7 @@ categories:
 tags:
 - LINE bot
 - LIFF
-- Azure
+- Azure Bot Service
 - LUIS
 - NLP
 ---
