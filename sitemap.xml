@@ -2,16 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service</loc>
+    <loc>https://magic-panda-engineer.github.io/AI/Azure-Computer-Vision-Program-Sample</loc>
     
-    <lastmod>2020-05-04T16:32:07.234Z</lastmod>
+    <lastmod>2020-05-17T16:51:06.296Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/AI/Azure-Computer-Vision-Tutorial</loc>
+    
+    <lastmod>2020-05-17T16:39:48.293Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/AWS/deploy-wordpress-on-aws</loc>
+    
+    <lastmod>2020-05-17T12:33:05.533Z</lastmod>
     
   </url>
   
   <url>
     <loc>https://magic-panda-engineer.github.io/ChatBot/deploy-develop-linebot-on-azure</loc>
     
-    <lastmod>2020-05-04T15:45:24.204Z</lastmod>
+    <lastmod>2020-05-17T12:32:59.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/discuss-azure-bot-service</loc>
+    
+    <lastmod>2020-05-17T12:32:56.215Z</lastmod>
     
   </url>
   
@@ -19,13 +40,6 @@
     <loc>https://magic-panda-engineer.github.io/Coding-Life/the-origin-of-coding-life</loc>
     
     <lastmod>2020-05-04T15:33:42.277Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/AWS/deploy-wordpress-on-aws</loc>
-    
-    <lastmod>2020-02-16T14:43:58.139Z</lastmod>
     
   </url>
   
@@ -79,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/keyboard/keychron-k4-unboxing</loc>
+    <loc>https://magic-panda-engineer.github.io/work/myth-of-10000-hours-effort</loc>
     
     <lastmod>2019-12-17T15:30:02.465Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/work/myth-of-10000-hours-effort</loc>
+    <loc>https://magic-panda-engineer.github.io/keyboard/keychron-k4-unboxing</loc>
     
     <lastmod>2019-12-17T15:30:02.465Z</lastmod>
     
@@ -100,14 +114,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
+    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
+    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     

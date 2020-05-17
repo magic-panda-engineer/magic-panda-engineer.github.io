@@ -1,6 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Azure 的 Computer Vision 程式範例]]></title>
+    <url>%2FAI%2FAzure-Computer-Vision-Program-Sample.html</url>
+    <content type="text"><![CDATA[現在 AI 影像辨識已經很成熟了，各大軟體廠都有提供相關的服務可以使用。 今天要介紹的是微軟 Azure Cognitive Service 之下的 Computer Vision。 這個服務是有免費額度的，這篇文章就帶大家一步一步的寫 Azure Computer Vision 的程式吧！ 不過首先，要先做好 Azure Computer Vision 的設定，可以參考這篇文章。 程式撰寫建立主控台應用程式打開 Visual Studio 2019，或是要使用其他的版本也可以。不過都2020年了，升級一下吧 XDDD。 接著我們建立新的專案，這邊我們選擇 .NET Core 的主控台應用程式。 安裝必需套件我們打開 NuGet 套件管理員，輸入 Microsoft.Azure.CognitiveServices.Vision.ComputerVision 我們要安裝的就是這個套件。 如圖所示，第一個就是了。 記得選擇穩定版的，比較不會有意外狀況發生。 開始寫程式還記得這篇文章中，談過的 key 和 endpoint 嗎？ 我們要把拿到 key 和 endpoint，用來建立連線：1ComputerVisionClient client = new ComputerVisionClient(new ApiKeyServiceClientCredentials(key))&#123; Endpoint = endpoint &#125;; 接著建立主要的偵測影像的method，我們就用偵測色情圖片，來測試Computer Vision這個服務的威力吧：123456789101112131415161718public static async Task DetectPorn(ComputerVisionClient client, string imgUrl)&#123; // 建立回傳的features的list，這裡使用Adult List&lt;VisualFeatureTypes&gt; features = new List&lt;VisualFeatureTypes&gt;() &#123; VisualFeatureTypes.Adult &#125;; Console.WriteLine($"分析圖片 &#123;imgUrl&#125;..."); Console.WriteLine(); ImageAnalysis results = await client.AnalyzeImageAsync(imgUrl, features); //分別列出成人內容和猥褻內容 Console.WriteLine($"含有成人內容: &#123;results.Adult.IsAdultContent&#125; 可信度 &#123;results.Adult.AdultScore&#125;"); Console.WriteLine($"含有猥褻內容: &#123;results.Adult.IsRacyContent&#125; 可信度 &#123;results.Adult.RacyScore&#125;"); Console.WriteLine();&#125; 測試結果我們把要測試的圖片的 URL，送給這個 method，就可以來判斷這個圖片是不是色情圖片啦！ 請看這個截圖，為了避免問題，我把色情圖片的 URL 剪掉了，大家可以自行找圖來測試。 可以看到，我們剛剛的測試照片，真的被判定為成人內容呢！ 描述圖片的功能也可以使用 VisualFeatureTypes.Description，來描述這張圖片的內容：1234List&lt;VisualFeatureTypes&gt; features = new List&lt;VisualFeatureTypes&gt;()&#123; VisualFeatureTypes.Adult, VisualFeatureTypes.Description&#125;; 然後再加上：12345Console.WriteLine("圖片描述:");foreach (var caption in results.Description.Captions)&#123; Console.WriteLine($"&#123;caption.Text&#125;");&#125; 天啊，這個圖片描述太可怕了，不便放上來，大家就自己測試吧（怕.jpg 其他Computer Vision的功能其他還可以取得 Categories，Tags，Objects，Brands，Faces等等的功能。 只要把這些選項，放在範例程式碼的 features 中，就可以再多辨識影像其他的內容囉！ 舉例來說，你要做物件偵測，那麼就可以加入 VisualFeatureTypes.Objects，就能做物件偵側啦！ 這個物件偵測，我們之後可以再寫一篇。 最後大家應該會要問，什麼是成人內容，什麼是猥褻內容呢？ 根據微軟的文件，成人內容是指裸體和性行為的內容，而猥褻內容是具有暗示性的影像。 大家可以試著放比基尼相關的照片，看結果就知道兩者之間的差異了。 另外還有一個新的是 isGoryContent ，這個是血腥的內容。 不過我這麼純真善良、連冰與火之歌都不敢看的工程師，就先來測試血腥內容的照片啦！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>Computer Vision</tag>
+        <tag>Azure Cognitive Service</tag>
+        <tag>Azure 認知服務</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Azure 的 Computer Vision 服務設定教學]]></title>
+    <url>%2FAI%2FAzure-Computer-Vision-Tutorial.html</url>
+    <content type="text"><![CDATA[現在 AI 影像辨識已經很成熟了，各大軟體廠都有提供相關的服務可以使用。 今天要介紹的是微軟 Azure Cognitive Service 之下的 Computer Vision。 這個服務是有免費額度的，這篇文章就帶大家一步一步的設定 Azure 吧！ 第一步首先進到 Azure Portal，找到 Azure Cognitive Service。 Azure Cognitive Service 中文叫做認知服務，如果是用中文版 Azure 的朋友可以用認知服務這個詞來找。 第二步點進到 Azure Cognitive Service 之後，可以看到這項服務的 dashboard。 如果之前有新增過服務的話，也會出現在列表上面。 進到這個畫面後，我們點擊左上角的 Add。 第三步接著會進到 Marketplace 裡面，這裡有許多 Azure Cognitive Service 相關的服務。 也有一些是第三方廠商上架的服務，整個和 AWS 很像。 這時候在上方的搜尋bar裡，輸入computer vision，中文的使用者可以輸入電腦視覺。 這時候跳出的第一個選項，就是我們要的服務囉！ 第四步點擊 Marketplace 出來的第一個computer vision之後，就會進到這個頁面，這時候選擇紅色框框起來的Create。 第五步這時候我們就來做設定啦！ 請看圖片 第一個 Name 會決定你endpoint URL，所以要是唯一的。 第二個 Subscription 就選擇免費版的，或是免費已過期就用付費版的訂閱。 第三個地點，就盡可能選離你服務比較近的地方，台灣可以選Japan East。 第四個 Pricing Teir，選免費的額度，會有每分鐘20個呼叫、每月5000個呼叫的額度。 第五個 Resource group 就選擇您想要的資源群組吧！要新建一個也是可以。 最後按下 Create。 第六步Create 點下去之後，需要等待一段時間。 等創建完成了之後，我們點擊進來剛剛創建的資源，就會可以看這個 computer vision 服務 dashboard 了。 大家可以在這個頁面探索一下，有哪些可以操作的。 不過我們直接接入重點，請點擊左方選單的 Keys and Endpoint。 點進去後，我們就可以看到如圖所示的 Key1 、 Key2，還有 Endpoint 了。 Key1 Key2都可以做為連結到這個 Computer Vision 服務的key。 也可以點擊圖片中的 Regenerate 按鍵，來產生新的key。 最後一步Azure Computer Vision 設定就到此結束啦！！ 記下這個 key 和 endpoint，下一步我們就可以開始寫程式了。 關於程式的教學與說明，就請移駕到這篇文章。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>AI</category>
+      </categories>
+      <tags>
+        <tag>Computer Vision</tag>
+        <tag>Azure Cognitive Service</tag>
+        <tag>Azure 認知服務</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[用 Azure 快速部署與開發 LINE bot]]></title>
     <url>%2FChatBot%2Fdeploy-develop-linebot-on-azure.html</url>
     <content type="text"><![CDATA[這是2020/04/21 在ChatBot Meetup 所分享的內容。 本次演講主要聚焦把開速部署和開發LINE bot，介紹app service、blob，以及微軟自然語言工具 LUIS。 本次演講是在線上直播的live demov，迴響超熱烈，被問了許多問題。 讀者可以看著投影片的內容，看看Azure有什麼可以快速開發Line Bot 的威力。 用 Azure 快速部署與開發 LINE bot from Ko Ko 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
@@ -10,9 +36,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Azure</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Azure Bot Service</tag>
       </tags>
   </entry>
   <entry>
@@ -49,9 +75,9 @@
       </categories>
       <tags>
         <tag>LINE bot</tag>
-        <tag>Azure</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Azure Bot Service</tag>
         <tag>LIFF</tag>
       </tags>
   </entry>
@@ -65,9 +91,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
+        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
-        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -102,9 +128,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
+        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
-        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -184,9 +210,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
+        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
-        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -368,6 +394,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[關於KoKo Mexcelsa]]></title>
+    <url>%2Fabout%2Findex.html</url>
+    <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[categories]]></title>
     <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
@@ -376,10 +407,5 @@
     <title><![CDATA[tags]]></title>
     <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
-  </entry>
-  <entry>
-    <title><![CDATA[關於KoKo Mexcelsa]]></title>
-    <url>%2Fabout%2Findex.html</url>
-    <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
   </entry>
 </search>
