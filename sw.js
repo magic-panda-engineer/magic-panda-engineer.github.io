@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/ChatBot/dialogflow-in-AT-Tech.html');
-
-  precacheUrls.push('/Coding-Life/the-origin-of-coding-life.html');
-
-  precacheUrls.push('/AI/Azure-Computer-Vision-Program-Sample.html');
-
   precacheUrls.push('/AWS/deploy-wordpress-on-aws.html');
 
+  precacheUrls.push('/Hexo/why-choose-hexo.html');
+
+  precacheUrls.push('/database/Design-datebase-do-not-use-boolean.html');
+
   precacheUrls.push('/AI/Azure-Computer-Vision-Tutorial.html');
+
+  precacheUrls.push('/AI/Azure-Computer-Vision-Program-Sample.html');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
