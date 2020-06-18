@@ -101,7 +101,7 @@ pwa:
     path: /manifest.json
     body:
       name: Magic Panda Engineer
-      short_name: hexo
+      short_name: 大魔術熊貓工程師
       icons:
         - src: https://s3-ap-northeast-1.amazonaws.com/magic-panda-engineer/blog-img/magicpandaengineer.jpg
           sizes: 192x192
