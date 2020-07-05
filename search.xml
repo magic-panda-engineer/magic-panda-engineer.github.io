@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[申請 Microsoft MVP 的心路歷程]]></title>
+    <url>%2FCoding-Life%2FKo-Ko-is-awarded-Microsoft-MVP.html</url>
+    <content type="text"><![CDATA[沒想到我居然拿到了 Microsoft MVP 的獎項了！！ 這些年來努力練技術，用力做演講，居然得到了認可 QQ 這篇文章就來分享一下申請MVP的心路歷程。 這些年來我一直致力於技術社群的演講、參與技術社群、寫部落，希望提高自己的實力並爭取更多機會。 無意間和恩師 James Tsai 聊到 Microsoft MVP 這個獎項，才知道原來我這些年的努力，可以試著申請看看MVP。 決定開始申請 Microsoft MVP 之後，就要開始來整理自己這些年做了什麼樣子的活動。 我把這些年來所有做過的演講表列出來，放在工作室的官網裡面，每個演講的項目都可以點擊進去專屬頁面，看進一步的細節。 這些專屬頁面，都有放上照片，還有演講活動網頁的連結。 有一點很重要的是，要把活動網頁連結的內容截圖下來，避免該連結後來失效而沒有內容可以做認證。 可以參考： https://kokomexcelsa.github.io/kokoweb/speech.html#portfolio-speech 然後跑了快半年的申請流程、寫了很多英文、填了很多資料、和微軟大中華地區的PM信件來來回回了二十幾封，最後在五月底終於把所有的資料確認了下來。並且告知我這一梯會在七月一日揭曉結果。 但是在端午連節的最後一天，我在清水服務區吃飯時，就先收到了微軟大中華地區PM的來信，請我加入MVP們的群組，但是正式訊息還是要等七月一號由美國微軟總部發信。 在七月一號晚上十點多，就收到了美國微軟總部的通知，告訴我已經選上 MVP 了！！ Microsoft MVP 不是微軟的員工，根據微軟MVP官網(網址)的定義： 「Microsoft 最有價值專家 (或 MVP) 是與社群熱情分享其知識的技術專家。他們總是走在「時代尖端」並不斷學習新穎的科技技術。他們深入了解 Microsoft 產品和服務，並同時將各種平台、產品和解決方案整合在一起來解決真實世界問題。由 MVP 組成的全球社群包含 90 個國家/地區 4,000 多位技術專家和社群領導者，這些人的熱情、社群精神和求知心推動著整個社群。除了出色的技術能力，最重要的是 MVP 總是願意協助他人，所以才與眾不同。」 很感謝微軟給了我這樣子的肯定。 也要感謝恩師james tsai，在我軟體生涯最迷茫的時候指點了我一條道路。 再來還要感謝各大社群的工程師朋友們，跟你們交流切磋技術真的是很開心很快樂，以後也要繼續一起練功！ 最後要感謝我最愛的未婚妻，在每個應該要約會周末與夜晚，我仍然在練技術寫文章跑社群做演講。 要不是妳的包容，我也不會拿到這樣的國際級獎項 QQ，最愛妳了！！！ 拿到 MVP 獎項只是開始，今後也是要繼續努力練技術，用力蹭熱度！！ 最後放個 MVP 頁面的圖。 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
+      <categories>
+        <category>Coding Life</category>
+      </categories>
+      <tags>
+        <tag>Ko Ko Microsoft MVP</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Azure 的 Computer Vision 程式範例]]></title>
     <url>%2FAI%2FAzure-Computer-Vision-Program-Sample.html</url>
     <content type="text"><![CDATA[現在 AI 影像辨識已經很成熟了，各大軟體廠都有提供相關的服務可以使用。 今天要介紹的是微軟 Azure Cognitive Service 之下的 Computer Vision。 這個服務是有免費額度的，這篇文章就帶大家一步一步的寫 Azure Computer Vision 的程式吧！ 不過首先，要先做好 Azure Computer Vision 的設定，可以參考這篇文章。 程式撰寫建立主控台應用程式打開 Visual Studio 2019，或是要使用其他的版本也可以。不過都2020年了，升級一下吧 XDDD。 接著我們建立新的專案，這邊我們選擇 .NET Core 的主控台應用程式。 安裝必需套件我們打開 NuGet 套件管理員，輸入 Microsoft.Azure.CognitiveServices.Vision.ComputerVision 我們要安裝的就是這個套件。 如圖所示，第一個就是了。 記得選擇穩定版的，比較不會有意外狀況發生。 開始寫程式還記得這篇文章中，談過的 key 和 endpoint 嗎？ 我們要把拿到 key 和 endpoint，用來建立連線：1ComputerVisionClient client = new ComputerVisionClient(new ApiKeyServiceClientCredentials(key))&#123; Endpoint = endpoint &#125;; 接著建立主要的偵測影像的method，我們就用偵測色情圖片，來測試Computer Vision這個服務的威力吧：123456789101112131415161718public static async Task DetectPorn(ComputerVisionClient client, string imgUrl)&#123; // 建立回傳的features的list，這裡使用Adult List&lt;VisualFeatureTypes&gt; features = new List&lt;VisualFeatureTypes&gt;() &#123; VisualFeatureTypes.Adult &#125;; Console.WriteLine($"分析圖片 &#123;imgUrl&#125;..."); Console.WriteLine(); ImageAnalysis results = await client.AnalyzeImageAsync(imgUrl, features); //分別列出成人內容和猥褻內容 Console.WriteLine($"含有成人內容: &#123;results.Adult.IsAdultContent&#125; 可信度 &#123;results.Adult.AdultScore&#125;"); Console.WriteLine($"含有猥褻內容: &#123;results.Adult.IsRacyContent&#125; 可信度 &#123;results.Adult.RacyScore&#125;"); Console.WriteLine();&#125; 測試結果我們把要測試的圖片的 URL，送給這個 method，就可以來判斷這個圖片是不是色情圖片啦！ 請看這個截圖，為了避免問題，我把色情圖片的 URL 剪掉了，大家可以自行找圖來測試。 可以看到，我們剛剛的測試照片，真的被判定為成人內容呢！ 描述圖片的功能也可以使用 VisualFeatureTypes.Description，來描述這張圖片的內容：1234List&lt;VisualFeatureTypes&gt; features = new List&lt;VisualFeatureTypes&gt;()&#123; VisualFeatureTypes.Adult, VisualFeatureTypes.Description&#125;; 然後再加上：12345Console.WriteLine("圖片描述:");foreach (var caption in results.Description.Captions)&#123; Console.WriteLine($"&#123;caption.Text&#125;");&#125; 天啊，這個圖片描述太可怕了，不便放上來，大家就自己測試吧（怕.jpg 其他Computer Vision的功能其他還可以取得 Categories，Tags，Objects，Brands，Faces等等的功能。 只要把這些選項，放在範例程式碼的 features 中，就可以再多辨識影像其他的內容囉！ 舉例來說，你要做物件偵測，那麼就可以加入 VisualFeatureTypes.Objects，就能做物件偵側啦！ 這個物件偵測，我們之後可以再寫一篇。 最後大家應該會要問，什麼是成人內容，什麼是猥褻內容呢？ 根據微軟的文件，成人內容是指裸體和性行為的內容，而猥褻內容是具有暗示性的影像。 大家可以試著放比基尼相關的照片，看結果就知道兩者之間的差異了。 另外還有一個新的是 isGoryContent ，這個是血腥的內容。 不過我這麼純真善良、連冰與火之歌都不敢看的工程師，就先來測試血腥內容的照片啦！ 如果這篇文章有幫助到你，歡迎在下方disqus留言版點擊愛心推荐哦！有任何問題請留言討論！也歡迎把大魔術熊貓工程師的文章連結分享出去哦！！]]></content>
@@ -36,9 +47,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
+        <tag>Azure Bot Service</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
-        <tag>Azure Bot Service</tag>
       </tags>
   </entry>
   <entry>
@@ -75,9 +86,9 @@
       </categories>
       <tags>
         <tag>LINE bot</tag>
+        <tag>Azure Bot Service</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
-        <tag>Azure Bot Service</tag>
         <tag>LIFF</tag>
       </tags>
   </entry>
@@ -91,9 +102,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -128,9 +139,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -210,9 +221,9 @@
       <tags>
         <tag>slides</tag>
         <tag>LINE bot</tag>
-        <tag>Dialogflow</tag>
         <tag>LUIS</tag>
         <tag>NLP</tag>
+        <tag>Dialogflow</tag>
       </tags>
   </entry>
   <entry>
@@ -399,13 +410,13 @@
     <content type="text"><![CDATA[為什麼會想把這個技術部落格，取名為大魔術熊貓工程師呢？ 做為一個接案工程師，其實就像是魔術師一樣，客戶提出的要求，總是要像變魔術一樣把它變出來。 熊貓大概是我最喜歡的動物了。每次看到熊貓的傻傻呆萌的影片，受傷的心靈都被療瘉了！！ 熊貓命名有個大原則，就是用疊字。例如說團團、圓圓。剛好我的名字是KoKo，黑眼圈也很重XDD 中華一番裡樓麟艦的料理對決很精采。 為什麼不在Evernote上寫技術筆記了？ 還是一直在Evernote上寫技術筆記。Evernote的功能超強大，尤其是搜尋功能，都能準確的找到寫過的筆記，真的超神！ Evernote除了不支持md語法外，最大的缺點就是筆記是寫給自己看的，不像技術部落格的筆記是寫給全世界的人看。 我還是持續使用Evernote，不過寫的內容比較像是草稿。對外發表的技術筆記會整理過，才會分享在大魔術熊貓工程師。 多年來已經累積有上百篇的Evernote技術筆記，會再慢慢整理，分享給全世界。所以有時候可能會一天內發表很多文章。 工程師的社交圈很看重技術部落格。為了不要當邊緣人，只好逼著自己寫部落格 XDD 為什麼這個技術部落格的主題包羅萬象？ 接案工程師的工作性質，本來就會遇到各式各樣的難題。能夠把客戶的困難解決，才是優秀的工程師。 我是雙子座AB型，所以喜歡涉獵各種面向的知識。 身為一個潮男，走在技術的尖端也是很合理的。 作過些什麼專案呢？ 從硬體玩到軟體，從後端玩到前端，從Android玩到iOS，從物聯網玩到AI。 作品集網站，不過有些幫客戶做的太敏感的，就不克放上來啦！]]></content>
   </entry>
   <entry>
-    <title><![CDATA[tags]]></title>
-    <url>%2Ftags%2Findex.html</url>
+    <title><![CDATA[categories]]></title>
+    <url>%2Fcategories%2Findex.html</url>
     <content type="text"></content>
   </entry>
   <entry>
-    <title><![CDATA[categories]]></title>
-    <url>%2Fcategories%2Findex.html</url>
+    <title><![CDATA[tags]]></title>
+    <url>%2Ftags%2Findex.html</url>
     <content type="text"></content>
   </entry>
 </search>

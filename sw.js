@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/AWS/deploy-wordpress-on-aws.html');
+  precacheUrls.push('/ChatBot/dialogflow-in-AT-Tech.html');
 
-  precacheUrls.push('/Hexo/why-choose-hexo.html');
-
-  precacheUrls.push('/database/Design-datebase-do-not-use-boolean.html');
+  precacheUrls.push('/AI/yolo-v1-slides.html');
 
   precacheUrls.push('/AI/Azure-Computer-Vision-Tutorial.html');
 
-  precacheUrls.push('/AI/Azure-Computer-Vision-Program-Sample.html');
+  precacheUrls.push('/accessories/AIA-backpack.html');
+
+  precacheUrls.push('/Coding-Life/Ko-Ko-is-awarded-Microsoft-MVP.html');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
