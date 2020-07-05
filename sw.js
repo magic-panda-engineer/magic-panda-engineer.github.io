@@ -24,13 +24,13 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/ChatBot/dialogflow-in-AT-Tech.html');
+  precacheUrls.push('/Hexo/hexo-404-and-letter-case.html');
 
   precacheUrls.push('/AI/yolo-v1-slides.html');
 
   precacheUrls.push('/AI/Azure-Computer-Vision-Tutorial.html');
 
-  precacheUrls.push('/accessories/AIA-backpack.html');
+  precacheUrls.push('/database/Design-datebase-do-not-use-boolean.html');
 
   precacheUrls.push('/Coding-Life/Ko-Ko-is-awarded-Microsoft-MVP.html');
 
