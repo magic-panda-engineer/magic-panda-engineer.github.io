@@ -2,9 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/Coding-Life/unboxing-microsoft-mvp-award-kit</loc>
+    
+    <lastmod>2020-07-18T06:06:45.281Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/tools/wakatime-for-time-management</loc>
+    
+    <lastmod>2020-07-18T04:33:54.774Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/Coding-Life/Ko-Ko-is-awarded-Microsoft-MVP</loc>
     
-    <lastmod>2020-07-05T15:29:57.647Z</lastmod>
+    <lastmod>2020-07-18T04:33:37.667Z</lastmod>
     
   </url>
   
@@ -142,13 +156,6 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/tools/wakatime-for-time-management</loc>
-    
-    <lastmod>2019-09-02T07:56:23.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://magic-panda-engineer.github.io/about/index</loc>
     
     <lastmod>2019-08-29T07:24:22.000Z</lastmod>
@@ -233,14 +240,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/categories/index</loc>
+    <loc>https://magic-panda-engineer.github.io/tags/index</loc>
     
     <lastmod>2019-04-16T17:02:25.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/tags/index</loc>
+    <loc>https://magic-panda-engineer.github.io/categories/index</loc>
     
     <lastmod>2019-04-16T17:02:25.000Z</lastmod>
     
