@@ -5,6 +5,7 @@ categories:
 - Coding Life
 tags:
 - Ko Ko Microsoft MVP
+- 柯克 微軟最有價值專家
 ---
 沒想到我居然拿到了 Microsoft MVP 的獎項了！！
 
