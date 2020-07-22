@@ -34,6 +34,7 @@ FedEx的email裡有個案委任書的範本，可以參考範本填寫。
 
 也可以用政府的報關APP，易利委（Ez Way），這個APP很簡單直觀，看到介面就大概會操作了 XDDD
 
+[關於易利委（Ez Way）的操作，可以參考恩師 James Tsai 的文章。](https://dotblogs.com.tw/jamestsai/2020/07/21/Transportation-for-Gift-Import-by-EZWay-App)
 
 # 開箱 Microsoft MVP Award
 
