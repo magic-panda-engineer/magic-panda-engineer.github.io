@@ -2,9 +2,30 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://magic-panda-engineer.github.io/Coding-Life/commuter-fat</loc>
+    
+    <lastmod>2020-07-22T02:18:12.567Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://magic-panda-engineer.github.io/Coding-Life/unboxing-microsoft-mvp-award-kit</loc>
     
-    <lastmod>2020-07-18T06:06:45.281Z</lastmod>
+    <lastmod>2020-07-22T01:43:33.468Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-and-luis-in-AIA</loc>
+    
+    <lastmod>2020-07-18T07:51:16.406Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-and-luis-in-AT-Tech</loc>
+    
+    <lastmod>2020-07-18T07:51:02.093Z</lastmod>
     
   </url>
   
@@ -72,20 +93,6 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-in-AT-Tech</loc>
-    
-    <lastmod>2020-02-16T14:40:56.492Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-in-AIA</loc>
-    
-    <lastmod>2020-02-16T14:40:50.217Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://magic-panda-engineer.github.io/ChatBot/dialogflow-and-luis-to-line-chat-bot</loc>
     
     <lastmod>2020-02-16T14:40:22.508Z</lastmod>
@@ -135,14 +142,14 @@
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
+    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
   </url>
   
   <url>
-    <loc>https://magic-panda-engineer.github.io/database/Design-datebase-do-not-use-boolean</loc>
+    <loc>https://magic-panda-engineer.github.io/accessories/AIA-backpack</loc>
     
     <lastmod>2019-12-17T15:30:02.463Z</lastmod>
     
