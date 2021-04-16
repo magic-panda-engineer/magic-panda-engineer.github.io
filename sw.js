@@ -24,15 +24,15 @@ var precacheUrls = [];
 
   precacheUrls.push('/');
 
-  precacheUrls.push('/ChatBot/dialogflow-and-luis-to-line-chat-bot.html');
+  precacheUrls.push('/Hexo/hexo-404-and-letter-case.html');
 
-  precacheUrls.push('/Coding-Life/the-origin-of-coding-life.html');
-
-  precacheUrls.push('/Coding-Life/unboxing-microsoft-mvp-award-kit.html');
+  precacheUrls.push('/AI/yolo-v1-slides.html');
 
   precacheUrls.push('/AI/Azure-Computer-Vision-Program-Sample.html');
 
-  precacheUrls.push('/Coding-Life/Ko-Ko-is-awarded-Microsoft-MVP.html');
+  precacheUrls.push('/AI/Azure-Computer-Vision-Tutorial.html');
+
+  precacheUrls.push('/database/Design-datebase-do-not-use-boolean.html');
 
 toolbox.precache(precacheUrls);
 toolbox.options = {"networkTimeoutSeconds":5};
